@@ -1,0 +1,3648 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO & Meta Tags -->
+  <title>XOJIAKBAR OSH MARKAZI — Haqiqiy O‘zbek Palovi va Milliy Taomlar | Andijon</title>
+  <meta name="description" content="XOJIAKBAR OSH MARKAZI — Andijon shahrida haqiqiy o‘zbek palovi, milliy taomlar, sho‘rvalar va kaboblar maskani. Asoschi: Mirzayev Xojiakbar. Buyurtma: +998 91 713 44 47." />
+  <meta name="keywords" content="Xojiakbar osh markazi, Andijon osh, o'zbek palovi, milliy taomlar, Andijon restoran, Mirzayev Xojiakbar" />
+  <meta name="author" content="Mirzayev Xojiakbar" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="XOJIAKBAR OSH MARKAZI — Haqiqiy O‘zbek Palovi" />
+  <meta property="og:description" content="An'anaviy o‘zbek taomlari maskani. Andijon shahri, Eski shahar hududi, Devnaboy masjidi ro‘parasida." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:locale" content="uz_UZ" />
+
+  <!-- Custom SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B2E22'/%3E%3Ccircle cx='32' cy='32' r='26' fill='none' stroke='%23D4AF37' stroke-width='2.5'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='%23D4AF37' font-family='Georgia, serif' font-weight='bold' font-size='26'%3EX%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Cormorant Garamond (Luxury Headings) & Plus Jakarta Sans (Clean UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Restaurant Schema Markup (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "XOJIAKBAR OSH MARKAZI",
+    "founder": {
+      "@type": "Person",
+      "name": "Mirzayev Xojiakbar"
+    },
+    "servesCuisine": ["Uzbek", "Central Asian", "Plov"],
+    "telephone": "+998917134447",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "UZ",
+      "addressLocality": "Andijon",
+      "streetAddress": "Eski shahar hududi, Devnaboy masjidi ro'parasida"
+    },
+    "sameAs": [
+      "https://t.me/mirzayev_0608"
+    ]
+  }
+  </script>
+
+  <style>
+    /* ==========================================================================
+       1. CSS VARIABLES & THEME PALETTE (Qora, To'q Yashil, Oltin, Qaymoqrang)
+       ========================================================================== */
+    :root {
+      --font-heading: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+      /* Brand Core Colors */
+      --emerald-deep: #0b2e22;
+      --emerald-mid: #134635;
+      --emerald-light: #1c634b;
+      --gold-primary: #d4af37;
+      --gold-hover: #e5c354;
+      --gold-soft: rgba(212, 175, 55, 0.14);
+      --obsidian: #0a0d0c;
+      --cream: #faf7f0;
+
+      /* Dark Mode Default Surfaces */
+      --bg-primary: #0a0d0c;
+      --bg-secondary: #101715;
+      --bg-card: #141e1b;
+      --bg-header: rgba(10, 13, 12, 0.86);
+      --text-primary: #f7f4ec;
+      --text-secondary: #b8c2be;
+      --text-muted: #84928d;
+      --border-color: rgba(212, 175, 55, 0.22);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --shadow-card: 0 18px 40px rgba(0, 0, 0, 0.45);
+      --shadow-gold: 0 10px 30px rgba(212, 175, 55, 0.22);
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+      --container-width: 1260px;
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #faf7f0;
+      --bg-secondary: #f2ede1;
+      --bg-card: #ffffff;
+      --bg-header: rgba(250, 247, 240, 0.92);
+      --text-primary: #111c18;
+      --text-secondary: #3f4f49;
+      --text-muted: #6b7a74;
+      --border-color: rgba(11, 46, 34, 0.2);
+      --border-subtle: rgba(11, 46, 34, 0.09);
+      --shadow-card: 0 14px 34px rgba(11, 46, 34, 0.08);
+      --shadow-gold: 0 10px 25px rgba(11, 46, 34, 0.16);
+    }
+
+    /* ==========================================================================
+       2. RESET & BASE STYLES
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.65;
+      overflow-x: hidden;
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Uzbek Architectural Geometric Pattern Overlay */
+    .uzbek-pattern-bg {
+      background-image: radial-gradient(var(--gold-primary) 0.75px, transparent 0.75px),
+                        radial-gradient(var(--gold-primary) 0.75px, transparent 0.75px);
+      background-size: 36px 36px;
+      background-position: 0 0, 18px 18px;
+      opacity: 0.05;
+      pointer-events: none;
+      position: absolute;
+      inset: 0;
+    }
+
+    /* ==========================================================================
+       3. LOADING SCREEN & SCROLL PROGRESS
+       ========================================================================== */
+    #preloader {
+      position: fixed;
+      inset: 0;
+      background: #080b0a;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+
+    #preloader.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loader-emblem {
+      width: 78px;
+      height: 78px;
+      border: 2px solid rgba(212, 175, 55, 0.25);
+      border-top-color: var(--gold-primary);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      animation: spin 1.2s linear infinite;
+      position: relative;
+    }
+
+    .loader-emblem span {
+      animation: spinReverse 1.2s linear infinite;
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+    }
+
+    .loader-text {
+      font-family: var(--font-heading);
+      letter-spacing: 3px;
+      font-size: 1.1rem;
+      color: var(--gold-primary);
+      text-transform: uppercase;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes spinReverse { to { transform: rotate(-360deg); } }
+
+    #scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--emerald-light), var(--gold-primary), #f3d982);
+      z-index: 1001;
+      transition: width 0.1s linear;
+    }
+
+    /* ==========================================================================
+       4. BUTTONS & TYPOGRAPHY UTILITIES
+       ========================================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 26px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold-primary), #b89022);
+      color: #0b1612;
+      box-shadow: var(--shadow-gold);
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, var(--gold-hover), var(--gold-primary));
+      box-shadow: 0 14px 32px rgba(212, 175, 55, 0.35);
+    }
+
+    .btn-emerald {
+      background: var(--emerald-deep);
+      color: #f7f4ec;
+      border: 1px solid var(--gold-primary);
+    }
+
+    .btn-emerald:hover {
+      background: var(--emerald-mid);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(11, 46, 34, 0.45);
+    }
+
+    .btn-outline {
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--gold-primary);
+      background: var(--gold-soft);
+      color: var(--gold-primary);
+    }
+
+    .section {
+      padding: 96px 0;
+      position: relative;
+    }
+
+    .section-alt {
+      background-color: var(--bg-secondary);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 56px;
+    }
+
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 99px;
+      background: var(--gold-soft);
+      border: 1px solid var(--border-color);
+      color: var(--gold-primary);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.1rem, 4vw, 3.1rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .section-subtitle {
+      color: var(--text-secondary);
+      font-size: 1.02rem;
+    }
+
+    .gold-divider {
+      width: 68px;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+      margin: 18px auto 0;
+    }
+
+    /* ==========================================================================
+       5. HEADER & NAVIGATION
+       ========================================================================== */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 900;
+      padding: 18px 0;
+      transition: var(--transition);
+      border-bottom: 1px solid transparent;
+    }
+
+    .header.scrolled {
+      background: var(--bg-header);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border-color);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      z-index: 950;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(145deg, var(--emerald-deep), #061b14);
+      border: 1.5px solid var(--gold-primary);
+      display: grid;
+      place-items: center;
+      font-family: var(--font-heading);
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+      flex-shrink: 0;
+    }
+
+    .logo-text-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-title {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 1.1;
+      color: var(--text-primary);
+    }
+
+    .logo-sub {
+      font-size: 0.68rem;
+      letter-spacing: 2.2px;
+      text-transform: uppercase;
+      color: var(--gold-primary);
+      font-weight: 600;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      position: relative;
+      padding: 6px 0;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: var(--gold-primary);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--gold-primary);
+    }
+
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 100%;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 950;
+    }
+
+    .icon-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-primary);
+      display: grid;
+      place-items: center;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .icon-btn:hover {
+      border-color: var(--gold-primary);
+      color: var(--gold-primary);
+      transform: translateY(-2px);
+    }
+
+    .lang-select {
+      height: 40px;
+      padding: 0 10px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .lang-select:hover, .lang-select:focus {
+      border-color: var(--gold-primary);
+    }
+
+    .cart-badge {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      background: var(--gold-primary);
+      color: #0b1612;
+      font-size: 0.72rem;
+      font-weight: 700;
+      min-width: 20px;
+      height: 20px;
+      padding: 0 5px;
+      border-radius: 99px;
+      display: grid;
+      place-items: center;
+    }
+
+    .hamburger {
+      display: none;
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      width: 22px;
+      height: 2px;
+      background: var(--gold-primary);
+      transition: var(--transition);
+    }
+
+    .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* ==========================================================================
+       6. HERO SECTION
+       ========================================================================== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 130px 0 80px;
+      background: #070b09;
+    }
+
+    .hero-bg-media {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+
+    .hero-bg-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      animation: heroSlowZoom 22s ease-in-out infinite alternate;
+      filter: brightness(0.42) contrast(1.08);
+    }
+
+    @keyframes heroSlowZoom {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.1); }
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: radial-gradient(circle at 70% 50%, rgba(11, 46, 34, 0.45), rgba(7, 11, 9, 0.92) 72%),
+                  linear-gradient(180deg, rgba(7, 11, 9, 0.7) 0%, rgba(7, 11, 9, 0.3) 50%, rgba(10, 13, 12, 1) 100%);
+    }
+
+    .hero-glow {
+      position: absolute;
+      width: 480px;
+      height: 480px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.16), transparent 70%);
+      top: 15%;
+      right: 8%;
+      z-index: 2;
+      animation: floatGlow 7s ease-in-out infinite alternate;
+      pointer-events: none;
+    }
+
+    @keyframes floatGlow {
+      0% { transform: translate(0, 0) scale(1); }
+      100% { transform: translate(-30px, 25px) scale(1.12); }
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 3;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: center;
+      gap: 48px;
+    }
+
+    .hero-content {
+      color: #f7f4ec;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 18px;
+      border-radius: 99px;
+      background: rgba(11, 46, 34, 0.85);
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      color: var(--gold-primary);
+      font-size: 0.84rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.6rem, 5.4vw, 4.4rem);
+      font-weight: 700;
+      line-height: 1.08;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .hero-title span {
+      color: var(--gold-primary);
+      font-style: italic;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+      color: #d7dfd9;
+      max-width: 600px;
+      margin-bottom: 34px;
+      line-height: 1.7;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 42px;
+    }
+
+    .hero-meta-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      padding-top: 26px;
+      border-top: 1px solid rgba(212, 175, 55, 0.25);
+    }
+
+    .hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-meta-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      color: var(--gold-primary);
+      display: grid;
+      place-items: center;
+      font-size: 1.1rem;
+    }
+
+    .hero-meta-item small {
+      display: block;
+      font-size: 0.76rem;
+      color: #9eb0a9;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hero-meta-item strong {
+      font-size: 0.95rem;
+      color: #ffffff;
+    }
+
+    .hero-showcase-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      background: linear-gradient(145deg, rgba(19, 70, 53, 0.45), rgba(10, 13, 12, 0.85));
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 28px 60px rgba(0, 0, 0, 0.65);
+    }
+
+    .hero-showcase-img {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4/4.3;
+      position: relative;
+    }
+
+    .hero-showcase-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-floating-tag {
+      position: absolute;
+      bottom: 28px;
+      left: 28px;
+      right: 28px;
+      background: rgba(10, 13, 12, 0.88);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--gold-primary);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+    }
+
+    .hero-floating-tag span {
+      font-size: 0.8rem;
+      color: var(--gold-primary);
+      display: block;
+    }
+
+    /* ==========================================================================
+       7. SPECIAL OFFERS BANNER
+       ========================================================================== */
+    .offers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .offer-card {
+      background: linear-gradient(135deg, var(--emerald-deep), #091e17);
+      border: 1px solid var(--gold-primary);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      color: #f7f4ec;
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .offer-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-gold);
+    }
+
+    .offer-tag {
+      display: inline-block;
+      background: var(--gold-primary);
+      color: #0b1612;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 99px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    .offer-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.65rem;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    .offer-card p {
+      color: #cad5d0;
+      font-size: 0.93rem;
+      margin-bottom: 18px;
+    }
+
+    /* ==========================================================================
+       8. MENU SECTION (FILTERS, SEARCH & CARDS)
+       ========================================================================== */
+    .menu-controls {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 42px;
+    }
+
+    .search-box-wrap {
+      max-width: 480px;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 14px 20px 14px 48px;
+      border-radius: 99px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.95rem;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--gold-primary);
+      box-shadow: 0 0 0 4px var(--gold-soft);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--gold-primary);
+      pointer-events: none;
+    }
+
+    .category-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .cat-btn {
+      padding: 10px 20px;
+      border-radius: 99px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-secondary);
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .cat-btn:hover {
+      border-color: var(--gold-primary);
+      color: var(--gold-primary);
+    }
+
+    .cat-btn.active {
+      background: linear-gradient(135deg, var(--emerald-deep), var(--emerald-mid));
+      color: #fff;
+      border-color: var(--gold-primary);
+      box-shadow: 0 8px 20px rgba(11, 46, 34, 0.35);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 28px;
+    }
+
+    .menu-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-card);
+      transition: var(--transition);
+    }
+
+    .menu-card:hover {
+      transform: translateY(-7px);
+      border-color: var(--gold-primary);
+    }
+
+    .menu-img-wrap {
+      position: relative;
+      height: 215px;
+      overflow: hidden;
+      background: #0d1512;
+    }
+
+    .menu-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .menu-card:hover .menu-img-wrap img {
+      transform: scale(1.08);
+    }
+
+    .menu-cat-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(10, 13, 12, 0.82);
+      backdrop-filter: blur(8px);
+      color: var(--gold-primary);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      padding: 4px 12px;
+      border-radius: 99px;
+      font-size: 0.74rem;
+      font-weight: 600;
+    }
+
+    .menu-body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .menu-title {
+      font-family: var(--font-heading);
+      font-size: 1.45rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+
+    .menu-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .menu-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .menu-price {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--gold-primary);
+    }
+
+    .btn-sm {
+      padding: 9px 16px;
+      font-size: 0.84rem;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 48px 20px;
+      color: var(--text-secondary);
+      grid-column: 1 / -1;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px dashed var(--border-color);
+    }
+
+    /* ==========================================================================
+       9. ABOUT US & FOUNDER PROFILE
+       ========================================================================== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .about-pillars {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .pillar-box {
+      padding: 18px;
+      border-radius: var(--radius-md);
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      transition: var(--transition);
+    }
+
+    .pillar-box:hover {
+      border-color: var(--gold-primary);
+    }
+
+    .pillar-box h4 {
+      color: var(--gold-primary);
+      font-size: 1.02rem;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pillar-box p {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+    }
+
+    .founder-card {
+      background: linear-gradient(160deg, var(--emerald-deep), #0b1612);
+      border: 1.5px solid var(--gold-primary);
+      border-radius: var(--radius-lg);
+      padding: 36px 30px;
+      text-align: center;
+      color: #f7f4ec;
+      box-shadow: var(--shadow-card);
+      position: relative;
+    }
+
+    .founder-avatar-placeholder {
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      border: 3px solid var(--gold-primary);
+      background: radial-gradient(circle at 30% 30%, var(--emerald-light), #081913);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-primary);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+      position: relative;
+    }
+
+    .founder-avatar-placeholder span {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .founder-avatar-placeholder small {
+      font-size: 0.65rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      opacity: 0.85;
+      margin-top: 4px;
+    }
+
+    .founder-role {
+      color: var(--gold-primary);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .founder-name {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      margin-bottom: 14px;
+      color: #ffffff;
+    }
+
+    .founder-quote {
+      font-style: italic;
+      color: #d2dcd7;
+      font-size: 0.96rem;
+      line-height: 1.7;
+      padding: 16px;
+      border-top: 1px solid rgba(212, 175, 55, 0.25);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+      margin-bottom: 18px;
+    }
+
+    /* ==========================================================================
+       10. WHY CHOOSE US
+       ========================================================================== */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 30px 26px;
+      transition: var(--transition);
+      box-shadow: var(--shadow-card);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold-primary);
+    }
+
+    .feature-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--emerald-deep), var(--emerald-mid));
+      border: 1px solid var(--gold-primary);
+      color: var(--gold-primary);
+      display: grid;
+      place-items: center;
+      font-size: 1.45rem;
+      margin-bottom: 18px;
+    }
+
+    .feature-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.45rem;
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+    }
+
+    /* ==========================================================================
+       11. GALLERY & LIGHTBOX
+       ========================================================================== */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      cursor: pointer;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(7, 15, 12, 0.88), transparent 60%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+
+    .gallery-item:hover img { transform: scale(1.08); }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+
+    .gallery-overlay h4 {
+      color: #fff;
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+    }
+
+    .gallery-overlay span {
+      color: var(--gold-primary);
+      font-size: 0.82rem;
+    }
+
+    /* Lightbox Modal */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 8, 7, 0.94);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .lightbox.open { display: flex; }
+
+    .lightbox-content {
+      max-width: 960px;
+      width: 100%;
+      position: relative;
+      text-align: center;
+    }
+
+    .lightbox-content img {
+      max-height: 78vh;
+      width: auto;
+      margin: 0 auto 14px;
+      border-radius: var(--radius-md);
+      border: 2px solid var(--gold-primary);
+    }
+
+    .lightbox-caption {
+      color: #f7f4ec;
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: -44px;
+      right: 0;
+      color: var(--gold-primary);
+      font-size: 2rem;
+      line-height: 1;
+    }
+
+    /* ==========================================================================
+       12. TESTIMONIALS (EDITABLE PLACEHOLDER SECTION)
+       ========================================================================== */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .testimonial-card {
+      background: var(--bg-card);
+      border: 1px dashed var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      position: relative;
+    }
+
+    .testimonial-badge {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--gold-primary);
+      background: var(--gold-soft);
+      padding: 4px 10px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .testimonial-text {
+      color: var(--text-secondary);
+      font-style: italic;
+      margin-bottom: 18px;
+      font-size: 0.94rem;
+    }
+
+    .testimonial-author {
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    /* ==========================================================================
+       13. BRANCHES & CONTACT
+       ========================================================================== */
+    .branches-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 28px;
+    }
+
+    .branch-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .branch-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .branch-title {
+      font-family: var(--font-heading);
+      font-size: 1.65rem;
+      color: var(--text-primary);
+    }
+
+    .branch-status {
+      padding: 4px 12px;
+      border-radius: 99px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      background: var(--gold-soft);
+      color: var(--gold-primary);
+      border: 1px solid var(--border-color);
+    }
+
+    .branch-info-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      color: var(--text-secondary);
+      font-size: 0.94rem;
+    }
+
+    .branch-info-list li strong {
+      color: var(--text-primary);
+    }
+
+    .map-placeholder {
+      height: 220px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--emerald-deep), #0b1612);
+      border: 1px dashed var(--gold-primary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      color: #e5ece9;
+      gap: 8px;
+    }
+
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 36px;
+      align-items: stretch;
+    }
+
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .contact-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: var(--gold-soft);
+      border: 1px solid var(--border-color);
+      color: var(--gold-primary);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      font-size: 1.2rem;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .map-container-box {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      min-height: 360px;
+      background: var(--bg-card);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .map-container-box .map-placeholder {
+      flex-grow: 1;
+      height: 100%;
+      border: none;
+      border-radius: 0;
+    }
+
+    /* ==========================================================================
+       14. ORDER DRAWER / CART SIDEBAR
+       ========================================================================== */
+    .cart-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(4px);
+      z-index: 1400;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+
+    .cart-backdrop.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .cart-drawer {
+      position: fixed;
+      top: 0;
+      right: -460px;
+      width: 100%;
+      max-width: 440px;
+      height: 100vh;
+      background: var(--bg-secondary);
+      border-left: 1px solid var(--gold-primary);
+      z-index: 1500;
+      display: flex;
+      flex-direction: column;
+      transition: right 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+      box-shadow: -20px 0 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .cart-drawer.open {
+      right: 0;
+    }
+
+    .cart-header {
+      padding: 22px 24px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--emerald-deep);
+      color: #fff;
+    }
+
+    .cart-header h3 {
+      font-family: var(--font-heading);
+      font-size: 1.55rem;
+      color: var(--gold-primary);
+    }
+
+    .cart-close {
+      color: #fff;
+      font-size: 1.6rem;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+    }
+
+    .cart-body {
+      flex-grow: 1;
+      overflow-y: auto;
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+    }
+
+    .cart-item-info h4 {
+      font-size: 0.95rem;
+      margin-bottom: 3px;
+    }
+
+    .cart-item-info span {
+      font-size: 0.85rem;
+      color: var(--gold-primary);
+      font-weight: 600;
+    }
+
+    .qty-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .qty-btn {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      font-weight: 700;
+      display: grid;
+      place-items: center;
+    }
+
+    .qty-btn:hover {
+      background: var(--gold-primary);
+      color: #0b1612;
+    }
+
+    .remove-item-btn {
+      color: #e05a5a;
+      font-size: 0.85rem;
+      margin-left: 4px;
+    }
+
+    .order-form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: var(--text-secondary);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 11px 14px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.92rem;
+      outline: none;
+    }
+
+    .form-control:focus {
+      border-color: var(--gold-primary);
+    }
+
+    .cart-footer {
+      padding: 20px 24px;
+      border-top: 1px solid var(--border-color);
+      background: var(--bg-card);
+    }
+
+    .cart-total-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .cart-total-row span:last-child {
+      color: var(--gold-primary);
+      font-size: 1.3rem;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 26px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--emerald-deep);
+      color: #fff;
+      border: 1px solid var(--gold-primary);
+      padding: 12px 24px;
+      border-radius: 99px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      z-index: 3000;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+      transition: transform 0.35s ease;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* ==========================================================================
+       15. FOOTER & SCROLL TO TOP
+       ========================================================================== */
+    .footer {
+      background: #070a09;
+      color: #d6dfd9;
+      border-top: 1px solid rgba(212, 175, 55, 0.25);
+      padding: 72px 0 28px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1.2fr;
+      gap: 44px;
+      margin-bottom: 48px;
+    }
+
+    .footer-desc {
+      color: #9aa8a2;
+      margin: 16px 0 20px;
+      font-size: 0.93rem;
+      max-width: 380px;
+    }
+
+    .footer-heading {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      color: var(--gold-primary);
+      margin-bottom: 18px;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: #b7c4be;
+      font-size: 0.92rem;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-primary);
+    }
+
+    .footer-bottom {
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.86rem;
+      color: #84928d;
+    }
+
+    #scroll-top-btn {
+      position: fixed;
+      bottom: 26px;
+      right: 26px;
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: var(--emerald-deep);
+      border: 1.5px solid var(--gold-primary);
+      color: var(--gold-primary);
+      font-size: 1.2rem;
+      display: grid;
+      place-items: center;
+      z-index: 850;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(15px);
+      transition: var(--transition);
+    }
+
+    #scroll-top-btn.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    #scroll-top-btn:hover {
+      background: var(--gold-primary);
+      color: #0b1612;
+    }
+
+    /* ==========================================================================
+       16. SCROLL REVEAL ANIMATIONS
+       ========================================================================== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.75s ease, transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ==========================================================================
+       17. RESPONSIVE MEDIA QUERIES
+       ========================================================================== */
+    @media (max-width: 1060px) {
+      .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 290px;
+        height: 100vh;
+        background: var(--bg-secondary);
+        border-left: 1px solid var(--gold-primary);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 100px 32px 32px;
+        gap: 20px;
+        transition: right 0.4s ease;
+        z-index: 920;
+      }
+
+      .nav-menu.open {
+        right: 0;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .hero-grid, .about-grid, .contact-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-showcase-card {
+        max-width: 480px;
+        margin: 0 auto;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .section {
+        padding: 68px 0;
+      }
+
+      .logo-title {
+        font-size: 1.02rem;
+      }
+
+      .header-order-text {
+        display: none;
+      }
+
+      .about-pillars {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-cta-group .btn {
+        width: 100%;
+      }
+    }
+  </style>
+
+
+
+
+
+
+<body>
+  <!-- Loading Screen -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-emblem"><span>X</span></div>
+    <div class="loader-text">XOJIAKBAR OSH MARKAZI</div>
+  </div>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- ========================================================================
+       A. HEADER — NAVIGATION
+       ======================================================================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="XOJIAKBAR OSH MARKAZI Bosh sahifa">
+        <div class="logo-icon">X</div>
+        <div class="logo-text-wrap">
+          <span class="logo-title">XOJIAKBAR</span>
+          <span class="logo-sub">OSH MARKAZI</span>
+        </div>
+      </a>
+
+      <nav aria-label="Asosiy navigatsiya">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active" data-i18n="nav_home">Bosh sahifa</a></li>
+          <li><a href="#menu" class="nav-link" data-i18n="nav_menu">Menyu</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav_about">Biz haqimizda</a></li>
+          <li><a href="#gallery" class="nav-link" data-i18n="nav_gallery">Galereya</a></li>
+          <li><a href="#branches" class="nav-link" data-i18n="nav_branches">Filiallar</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Aloqa</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <select id="lang-switcher" class="lang-select" aria-label="Tilni tanlang">
+          <option value="uz">UZ</option>
+          <option value="ru">RU</option>
+          <option value="en">EN</option>
+        </select>
+
+        <!-- Dark / Light Mode Toggle -->
+        <button class="icon-btn" id="theme-toggle" aria-label="Mavzuni o'zgartirish" title="Dark / Light Mode">
+          <span id="theme-icon">☀️</span>
+        </button>
+
+        <!-- Cart / Order Drawer Trigger -->
+        <button class="btn btn-gold btn-sm" id="open-cart-btn" aria-label="Savatni ochish">
+          <span>🛒</span>
+          <span class="header-order-text" data-i18n="nav_order">Buyurtma berish</span>
+          <span class="cart-badge" id="header-cart-count">0</span>
+        </button>
+
+        <!-- Mobile Hamburger -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Mobil menyu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         B. HERO SECTION — BIRINCHI EKRAN
+         ====================================================================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg-media">
+        <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=1920&q=85" alt="Haqiqiy o'zbek palovi - Xojiakbar Osh Markazi" />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-glow"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-pill">
+            <span>✦</span>
+            <span data-i18n="hero_badge">Andijon Milliy Oshxona Merosi</span>
+          </div>
+
+          <h1 class="hero-title" data-i18n="hero_title">
+            Haqiqiy o‘zbek palovi — <span>milliy ta'm va an'ana!</span>
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="hero_subtitle">
+            XOJIAKBAR OSH MARKAZI — an'anaviy o‘zbek taomlari maskani. Har bir qozonda asrlik mahorat, sarxil masalliqlar va samimiy mehmondo‘stlik mujassam.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#menu" class="btn btn-gold" data-i18n="hero_btn_menu">Menyuni ko‘rish</a>
+            <button type="button" class="btn btn-emerald" id="hero-order-btn" data-i18n="hero_btn_order">Buyurtma berish</button>
+          </div>
+
+          <div class="hero-meta-strip">
+            <div class="hero-meta-item">
+              <div class="hero-meta-icon">📍</div>
+              <div>
+                <small data-i18n="hero_loc_label">Manzilimiz</small>
+                <strong data-i18n="hero_loc_val">Andijon, Eski shahar (Devnaboy masjidi ro‘parasida)</strong>
+              </div>
+            </div>
+            <div class="hero-meta-item">
+              <div class="hero-meta-icon">📞</div>
+              <div>
+                <small data-i18n="hero_phone_label">Tezkor aloqa</small>
+                <strong><a href="tel:+998917134447">+998 91 713 44 47</a></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-showcase-card reveal">
+          <div class="hero-showcase-img">
+            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=900&q=85" alt="An'anaviy bayramona o'zbek palovi" />
+            <div class="hero-floating-tag">
+              <div>
+                <span data-i18n="hero_card_tag">Oshpaz tavsiyasi</span>
+                <strong data-i18n="hero_card_title">Andijoncha Devzira Palov</strong>
+              </div>
+              <a href="#menu" class="btn btn-gold btn-sm">→</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SPECIAL OFFERS — MAXSUS TAKLIFLAR (TAHRIRLANADIGAN)
+         ====================================================================== -->
+    <section class="section section-alt" id="offers">
+      <div class="uzbek-pattern-bg"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge" data-i18n="offers_badge">Maxsus takliflar</span>
+          <h2 class="section-title" data-i18n="offers_title">Mehmonlarimiz uchun qulay takliflar</h2>
+          <p class="section-subtitle" data-i18n="offers_sub">Oilaviy dasturxonlar, tushlik va korporativ buyurtmalar uchun maxsus to‘plamlar.</p>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="offers-grid" id="offers-container">
+          <!-- Rendered dynamically from SITE_CONFIG.offers -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         C. MENU — MILLIY TAOMLAR
+         ====================================================================== -->
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge" data-i18n="menu_badge">Milliy taomnoma</span>
+          <h2 class="section-title" data-i18n="menu_title">Sarxil O‘zbek Taomlari Menyusi</h2>
+          <p class="section-subtitle" data-i18n="menu_sub">Kategoriyani tanlang yoki taom nomi bo‘yicha qidiring va savatga qo‘shing.</p>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="menu-controls reveal">
+          <div class="search-box-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="search" id="menu-search" class="search-input" placeholder="Taom nomini qidiring..." aria-label="Taom qidirish" />
+          </div>
+
+          <div class="category-tabs" id="category-tabs" role="tablist">
+            <!-- Category buttons rendered via JS -->
+          </div>
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+          <!-- Menu cards rendered via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         D. ABOUT US — BIZ HAQIMIZDA VA ASOSCHI PROFILI
+         ====================================================================== -->
+    <section class="section section-alt" id="about">
+      <div class="uzbek-pattern-bg"></div>
+      <div class="container">
+        <div class="about-grid">
+          <div class="reveal">
+            <span class="section-badge" data-i18n="about_badge">Biz haqimizda</span>
+            <h2 class="section-title" data-i18n="about_title">An'analarga Sodiqlik va Yuqori Sifat Maskani</h2>
+            <p class="section-subtitle" style="margin-bottom: 16px;" data-i18n="about_p1">
+              XOJIAKBAR OSH MARKAZI — o‘zbek milliy oshpazlik san'atining eng sara an'analarini zamonaviy xizmat madaniyati bilan uyg‘unlashtirgan maskandir. Biz uchun har bir mehmon — aziz va qadrli.
+            </p>
+            <p class="section-subtitle" data-i18n="about_p2">
+              Taomlarimiz faqat sara guruch, yangi go‘sht va tabiiy ziravorlardan, gigiyena hamda halollik talablariga qat'iy rioya qilgan holda tayyorlanadi.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar-box">
+                <h4><span>🏺</span> <span data-i18n="pillar_1_t">Milliy an'analar</span></h4>
+                <p data-i18n="pillar_1_d">Avloddan-avlodga o‘tib kelayotgan haqiqiy Andijoncha osh tayyorlash uslubi.</p>
+              </div>
+              <div class="pillar-box">
+                <h4><span>🌾</span> <span data-i18n="pillar_2_t">Sifatli mahsulotlar</span></h4>
+                <p data-i18n="pillar_2_d">Har kuni tongda saralab olingan eng toza va tabiiy masalliqlar.</p>
+              </div>
+              <div class="pillar-box">
+                <h4><span>🤝</span> <span data-i18n="pillar_3_t">Mehmondo‘stlik</span></h4>
+                <p data-i18n="pillar_3_d">O‘zbekona ochiq chehra, hurmat va samimiy xizmat ko‘rsatish.</p>
+              </div>
+              <div class="pillar-box">
+                <h4><span>✨</span> <span data-i18n="pillar_4_t">Tozalik va sifat</span></h4>
+                <p data-i18n="pillar_4_d">Oshxona va zallarda yuqori darajadagi ozodalik nazorati.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Founder Profile Card -->
+          <div class="founder-card reveal">
+            <div class="founder-avatar-placeholder" title="Asoschi rasmi joyi (Keyinchalik almashtiriladi)">
+              <span>MX</span>
+              <small>Rasm joyi</small>
+            </div>
+            <div class="founder-role" data-i18n="founder_role">Asoschi / Founder</div>
+            <h3 class="founder-name">Mirzayev Xojiakbar</h3>
+            <blockquote class="founder-quote" data-i18n="founder_quote">
+              “Maqsadimiz — XOJIAKBAR OSH MARKAZIga tashrif buyurgan har bir yurtdoshimiz va mehmonimizga haqiqiy o‘zbek palovining asl ta'mini, oilaviy iliqlik va yuksak hurmatni taqdim etishdir.”
+            </blockquote>
+            <a href="https://t.me/mirzayev_0608" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm">
+              <span>✈️</span> @mirzayev_0608
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         E. WHY CHOOSE US — NEGA AYNAN BIZ?
+         ====================================================================== -->
+    <section class="section" id="why-us">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge" data-i18n="why_badge">Afzalliklarimiz</span>
+          <h2 class="section-title" data-i18n="why_title">Nega Aynan XOJIAKBAR OSH MARKAZI?</h2>
+          <p class="section-subtitle" data-i18n="why_sub">Mijozlarimiz ishonchini qozonishimizga sabab bo‘layotgan 6 ta asosiy tamoyilimiz.</p>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="features-grid" id="features-grid">
+          <!-- Rendered dynamically from SITE_CONFIG.features -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         F. GALLERY — GALEREYA & LIGHTBOX
+         ====================================================================== -->
+    <section class="section section-alt" id="gallery">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge" data-i18n="gal_badge">Fotogalereya</span>
+          <h2 class="section-title" data-i18n="gal_title">Taomlar va Muhitimizdan Lavhalar</h2>
+          <p class="section-subtitle" data-i18n="gal_sub">Rasm ustiga bosing va to‘liq o‘lchamda tomosha qiling.</p>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Gallery items rendered via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         TESTIMONIALS — MIJOZLAR FIKRLARI (TAHRIRLANADIGAN NAMUNAVIY JOY)
+         ====================================================================== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge" data-i18n="test_badge">Mijozlar fikri</span>
+          <h2 class="section-title" data-i18n="test_title">Mehmonlarimiz Taassurotlari</h2>
+          <p class="section-subtitle" data-i18n="test_sub">Ushbu bo‘limga mijozlarning haqiqiy fikr-mulohazalari va tavsiyalari joylashtiriladi.</p>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="testimonials-grid" id="testimonials-grid">
+          <!-- Editable placeholder testimonials rendered via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         G. BRANCHES — FILIALLAR
+         ====================================================================== -->
+    <section class="section section-alt" id="branches">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge" data-i18n="branch_badge">Filiallarimiz</span>
+          <h2 class="section-title" data-i18n="branch_title">Bizning Manzil va Filiallar</h2>
+          <p class="section-subtitle" data-i18n="branch_sub">Sizni shinam dasturxonimiz atrofida kutib qolamiz.</p>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="branches-grid" id="branches-grid">
+          <!-- Branches rendered via JS from SITE_CONFIG.branches -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         H. CONTACT — ALOQA
+         ====================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge" data-i18n="contact_badge">Bog‘lanish</span>
+          <h2 class="section-title" data-i18n="contact_title">Biz Bilan Aloqa</h2>
+          <p class="section-subtitle" data-i18n="contact_sub">Buyurtma berish, joy band qilish yoki hamkorlik masalalari bo‘yicha murojaat qiling.</p>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-card reveal">
+            <div style="display: flex; flex-direction: column; gap: 22px;">
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                  <h4 data-i18n="contact_phone_t">Telefon raqam</h4>
+                  <a href="tel:+998917134447" style="color: var(--gold-primary); font-weight: 700; font-size: 1.1rem;">+998 91 713 44 47</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">✈️</div>
+                <div>
+                  <h4>Telegram</h4>
+                  <a href="https://t.me/mirzayev_0608" target="_blank" rel="noopener noreferrer" style="color: var(--gold-primary); font-weight: 700;">@mirzayev_0608</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <h4 data-i18n="contact_addr_t">Manzil va mo‘ljal</h4>
+                  <p style="color: var(--text-secondary);" data-i18n="contact_addr_v">O‘zbekiston, Andijon shahri, Eski shahar hududi.<br><strong>Mo‘ljal:</strong> Devnaboy masjidi ro‘parasida.</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">👤</div>
+                <div>
+                  <h4 data-i18n="contact_founder_t">Asoschi</h4>
+                  <p style="color: var(--text-secondary);">Mirzayev Xojiakbar</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-actions">
+              <a href="tel:+998917134447" class="btn btn-gold">
+                <span>📞</span> <span data-i18n="btn_call">Qo‘ng‘iroq qilish</span>
+              </a>
+              <a href="https://t.me/mirzayev_0608" target="_blank" rel="noopener noreferrer" class="btn btn-emerald">
+                <span>✈️</span> <span data-i18n="btn_tg">Telegram orqali yozish</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="map-container-box reveal">
+            <!-- Google Maps iframe joylashtiriladigan maxsus joy -->
+            <div class="map-placeholder" id="contact-map-slot">
+              <span style="font-size: 2.2rem;">🗺️</span>
+              <strong style="color: var(--gold-primary); font-size: 1.15rem;">Google Maps Xarita Joyi</strong>
+              <p style="max-width: 400px; font-size: 0.9rem; color: #c7d3ce;">
+                O‘zbekiston, Andijon shahri, Eski shahar hududi (Devnaboy masjidi ro‘parasida).<br>
+                <em>Aniq koordinatalar kiritilganda ushbu maydonda interaktiv xarita aks etadi.</em>
+              </p>
+              <a href="https://www.google.com/maps/search/?api=1&query=Andijon+Eski+shahar+Devnaboy+masjidi" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm" style="margin-top: 8px;">
+                Google Maps'da ochish ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       J. FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#home" class="brand-logo">
+            <div class="logo-icon">X</div>
+            <div class="logo-text-wrap">
+              <span class="logo-title" style="color: #fff;">XOJIAKBAR</span>
+              <span class="logo-sub">OSH MARKAZI</span>
+            </div>
+          </a>
+          <p class="footer-desc" data-i18n="footer_desc">
+            XOJIAKBAR OSH MARKAZI — an'anaviy o‘zbek taomlari va haqiqiy Andijoncha palov maskani. Sifat, halollik va mehmondo‘stlik timsoli.
+          </p>
+          <p style="font-size: 0.9rem; color: var(--gold-primary);">
+            <strong data-i18n="footer_founder">Asoschi:</strong> Mirzayev Xojiakbar
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading" data-i18n="footer_nav">Tezkor havolalar</h4>
+          <ul class="footer-links">
+            <li><a href="#home" data-i18n="nav_home">Bosh sahifa</a></li>
+            <li><a href="#menu" data-i18n="nav_menu">Menyu</a></li>
+            <li><a href="#about" data-i18n="nav_about">Biz haqimizda</a></li>
+            <li><a href="#gallery" data-i18n="nav_gallery">Galereya</a></li>
+            <li><a href="#branches" data-i18n="nav_branches">Filiallar</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Aloqa</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading" data-i18n="footer_contact">Aloqa ma'lumotlari</h4>
+          <ul class="footer-links">
+            <li>📞 <a href="tel:+998917134447">+998 91 713 44 47</a></li>
+            <li>✈️ <a href="https://t.me/mirzayev_0608" target="_blank" rel="noopener noreferrer">@mirzayev_0608</a></li>
+            <li>📍 O‘zbekiston, Andijon shahri, Eski shahar hududi</li>
+            <li>🕌 Mo‘ljal: Devnaboy masjidi ro‘parasida</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="current-year"></span> XOJIAKBAR OSH MARKAZI. Barcha huquqlar himoyalangan.</span>
+        <span>Founder: Mirzayev Xojiakbar</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       I. ORDER SYSTEM — SAVAT VA BUYURTMA PANELI (DRAWER)
+       ======================================================================== -->
+  <div class="cart-backdrop" id="cart-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Buyurtma savati">
+    <div class="cart-header">
+      <h3 data-i18n="cart_title">Sizning Buyurtmangiz</h3>
+      <button class="cart-close" id="close-cart-btn" aria-label="Savatni yopish">✕</button>
+    </div>
+
+    <div class="cart-body">
+      <div id="cart-items-list">
+        <!-- Cart items rendered dynamically -->
+      </div>
+
+      <form class="order-form" id="order-form">
+        <div class="form-group">
+          <label for="customer-name" data-i18n="form_name">Ismingiz *</label>
+          <input type="text" id="customer-name" class="form-control" placeholder="Masalan: Azizbek" required />
+        </div>
+
+        <div class="form-group">
+          <label for="customer-phone" data-i18n="form_phone">Telefon raqamingiz *</label>
+          <input type="tel" id="customer-phone" class="form-control" placeholder="+998 90 123 45 67" required />
+        </div>
+
+        <div class="form-group">
+          <label for="customer-address" data-i18n="form_address">Yetkazib berish manzili *</label>
+          <textarea id="customer-address" class="form-control" rows="2" placeholder="Shahar, tuman, ko'cha va mo'ljal..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="customer-note" data-i18n="form_note">Qo‘shimcha izoh (ixtiyoriy)</label>
+          <input type="text" id="customer-note" class="form-control" placeholder="Masalan: Porsiya soni yoki qo'shimcha salat..." />
+        </div>
+      </form>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span data-i18n="cart_total">Jami summa:</span>
+        <span id="cart-total-price">0 so‘m</span>
+      </div>
+      <button type="submit" form="order-form" class="btn btn-gold" style="width: 100%;" id="submit-telegram-order">
+        <span>✈️</span> <span data-i18n="btn_send_tg">Buyurtmani Telegram orqali yuborish</span>
+      </button>
+      <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 8px;" data-i18n="cart_hint">
+        Buyurtma matni tayyorlanib, @mirzayev_0608 Telegram sahifasiga yo‘naltiriladi.
+      </p>
+    </div>
+  </aside>
+
+  <!-- Gallery Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Yopish">✕</button>
+      <img src="" alt="" id="lightbox-img" />
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Toast Message -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scroll-top-btn" aria-label="Yuqoriga qaytish" title="Yuqoriga">↑</button>
+
+
+
+
+
+  <script>
+    /**
+     * ==========================================================================
+     * XOJIAKBAR OSH MARKAZI — MARKAZIY BOSHQARUV SOZLAMALARI (SITE_CONFIG)
+     * Barcha taomlar, narxlar, filiallar, galereya va matnlarni shu yerdan
+     * osongina o'zgartirishingiz yoki yangilarini qo'shishingiz mumkin.
+     * ==========================================================================
+     */
+    const SITE_CONFIG = {
+      brand: {
+        name: "XOJIAKBAR OSH MARKAZI",
+        founder: "Mirzayev Xojiakbar",
+        phone: "+998 91 713 44 47",
+        phoneRaw: "+998917134447",
+        telegramUsername: "mirzayev_0608",
+        telegramUrl: "https://t.me/mirzayev_0608",
+        address: "O‘zbekiston, Andijon shahri, Eski shahar hududi",
+        landmark: "Devnaboy masjidi ro‘parasida",
+        currency: "so‘m",
+        // Kelajakda Telegram Bot API ulash uchun tayyor nuqta:
+        telegramBotWebhookUrl: ""
+      },
+
+      // 7 ta asosiy taom kategoriyasi
+      categories: [
+        { id: "all", uz: "Barchasi", ru: "Все блюда", en: "All Dishes" },
+        { id: "plov", uz: "O‘zbek palovi", ru: "Узбекский плов", en: "Uzbek Plov" },
+        { id: "soups", uz: "Sho‘rvalar", ru: "Супы", en: "Soups" },
+        { id: "kebabs", uz: "Kaboblar", ru: "Шашлыки", en: "Kebabs" },
+        { id: "national", uz: "Milliy taomlar", ru: "Национальные блюда", en: "National Dishes" },
+        { id: "salads", uz: "Salatlar", ru: "Салаты", en: "Salads" },
+        { id: "drinks", uz: "Ichimliklar", ru: "Напитки", en: "Drinks" },
+        { id: "desserts", uz: "Shirinliklar", ru: "Десерты", en: "Desserts" }
+      ],
+
+      // Taomlar ro'yxati (Narxlarni keyinchalik raqam ko'rinishida o'zgartirish mumkin, 0 bo'lsa "Narx kelishiladi / Tez kunda" chiqadi)
+      menuItems: [
+        // ==================== 1. O'ZBEK PALOVI TURLARI ====================
+        {
+          id: 1,
+          category: "plov",
+          price: 35000,
+          image: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Andijoncha Devzira Palov", ru: "Андижанский плов Девзира", en: "Andijan Devzira Plov" },
+          desc: {
+            uz: "Qizil devzira guruchi, sarxil qo‘y go‘shti, sariq sabzi va maxsus ziravorlar bilan damlangan haqiqiy Andijon palovi.",
+            ru: "Настоящий андижанский плов из красного риса девзира, отборной баранины, желтой моркови и ароматных специй.",
+            en: "Authentic Andijan plov cooked with red Devzira rice, tender lamb, yellow carrots, and aromatic spices."
+          }
+        },
+        {
+          id: 2,
+          category: "plov",
+          price: 40000,
+          image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "To‘y Palovi (Maxsus)", ru: "Праздничный Той-плов", en: "Festive Wedding Plov" },
+          desc: {
+            uz: "No‘xat, mayiz, bedana tuxumi va qazi bilan bezatilgan shohona bayram palovi.",
+            ru: "Королевский праздничный плов с нутом, изюмом, перепелиными яйцами и казы.",
+            en: "Royal festive plov garnished with chickpeas, raisins, quail eggs, and traditional kazy."
+          }
+        },
+        {
+          id: 3,
+          category: "plov",
+          price: 38000,
+          image: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Choyxona Palov (Qo‘y go‘shtli)", ru: "Чайханский плов с бараниной", en: "Choykhona Lamb Plov" },
+          desc: {
+            uz: "Dumg‘aza yog‘i va sarxil qo‘y go‘shtida zira bilan qovurib pishirilgan an'anaviy choyxona oshi.",
+            ru: "Традиционный чайханский плов, приготовленный на курдючном жире с нежной бараниной и зирой.",
+            en: "Traditional teahouse plov slow-cooked with lamb fat, tender lamb cuts, and cumin."
+          }
+        },
+        {
+          id: 4,
+          category: "plov",
+          price: 42000,
+          image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Qazili va Bedana Tuxumli Palov", ru: "Плов с казы и перепелиными яйцами", en: "Plov with Kazy & Quail Eggs" },
+          desc: {
+            uz: "Yangi pishgan ot go‘shti qazisi va 2 dona bedana tuxumi qo‘shib tortiladigan to‘yimli palov.",
+            ru: "Сытный плов с домашним казы из конины и двумя перепелиными яйцами.",
+            en: "Hearty plov topped with sliced horsemeat kazy sausage and two quail eggs."
+          }
+        },
+        {
+          id: 5,
+          category: "plov",
+          price: 36000,
+          image: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Samarqandcha Zig‘ir Palov", ru: "Самаркандский плов на льняном масле", en: "Samarkand Flaxseed Oil Plov" },
+          desc: {
+            uz: "Qatlam-qatlam qilib suziladigan, zig‘ir yog‘ining xushbo‘y ta'miga ega yengil va hazmli palov.",
+            ru: "Слоеный самаркандский плов на ароматном льняном масле — легкий и рассыпчатый.",
+            en: "Layered Samarkand-style plov prepared with aromatic flaxseed oil."
+          }
+        },
+        {
+          id: 6,
+          category: "plov",
+          price: 45000,
+          image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Katta Porsiya (1.5x Shohona)", ru: "Большая порция (1.5x Королевская)", en: "King Size Plov (1.5x)" },
+          desc: {
+            uz: "Kattaroq porsiya va ikki hissa ko‘p go‘sht bilan tortiladigan maxsus buyurtma palovi.",
+            ru: "Увеличенная порция плова с двойным количеством отборного мяса.",
+            en: "Extra-large serving of signature plov with double portion of tender meat."
+          }
+        },
+
+        // ==================== 2. SHASHLIK VA KABOB TURLARI ====================
+        {
+          id: 7,
+          category: "kebabs",
+          price: 22000,
+          image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "G‘ijduvoncha Qiyma Shashlik", ru: "Молотый шашлык по-гиждувански", en: "Gijduvan Minced Shashlik" },
+          desc: {
+            uz: "Sersuv va yumshoq qilib ziravorlangan mol va qo‘y go‘shtidan ko‘mirda pishirilgan klassik qiyma shashlik.",
+            ru: "Сочный шашлык из отборного фарша говядины и баранины, приготовленный на углях.",
+            en: "Juicy charcoal-grilled minced beef and lamb shashlik seasoned with traditional spices."
+          }
+        },
+        {
+          id: 8,
+          category: "kebabs",
+          price: 26000,
+          image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Jaz Shashlik (Qo‘y go‘shti)", ru: "Кусковой шашлык из баранины", en: "Lamb Chunks Shashlik" },
+          desc: {
+            uz: "Maxsus marinadlangan sarxil qo‘y go‘shti bo‘laklari va dumg‘aza yog‘idan tayyorlangan jaz kabob.",
+            ru: "Классический кусковой шашлык из нежной маринованной баранины с курдюком.",
+            en: "Classic charcoal-grilled chunks of tender marinated lamb with tail fat."
+          }
+        },
+        {
+          id: 9,
+          category: "kebabs",
+          price: 25000,
+          image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Mol Go‘shtidan Jaz Shashlik", ru: "Кусковой шашлык из говядины", en: "Beef Tenderloin Shashlik" },
+          desc: {
+            uz: "Yumshoq lahm mol go‘shtidan maxsus ziravorlar bilan ko‘mir cho‘g‘ida pishirilgan shashlik.",
+            ru: "Нежные кусочки говяжьей вырезки, обжаренные на древесных углях.",
+            en: "Tender beef sirloin cubes marinated in spices and grilled over hot charcoal."
+          }
+        },
+        {
+          id: 10,
+          category: "kebabs",
+          price: 28000,
+          image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Napoleon Shashlik (Qatlama)", ru: "Шашлык Наполеон (Слоеный)", en: "Napoleon Layered Shashlik" },
+          desc: {
+            uz: "Yupqa go‘sht va charvi qatlamlaridan o‘rab pishirilgan, og‘izda eriydigan tansiq shashlik.",
+            ru: "Изысканный рулет из тонких слоев мяса и жировой сетки, тающий во рту.",
+            en: "Delicate rolled layers of thinly sliced meat and caul fat grilled to perfection."
+          }
+        },
+        {
+          id: 11,
+          category: "kebabs",
+          price: 30000,
+          image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Qo‘y Qovurg‘asi (Kare)", ru: "Бараньи ребрышки (Каре)", en: "Grilled Lamb Chops" },
+          desc: {
+            uz: "Sersuv qo‘y qovurg‘alari zira va qora murch bilan marinadlanib, ko‘mirda qizartirilgan.",
+            ru: "Сочные бараньи ребрышки, маринованные с зирой и черным перцем на мангале.",
+            en: "Juicy lamb ribs marinated with cumin and black pepper, seared over charcoal."
+          }
+        },
+        {
+          id: 12,
+          category: "kebabs",
+          price: 20000,
+          image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Jigar Shashlik (Charvili)", ru: "Шашлык из печени в сетке", en: "Wrapped Liver Shashlik" },
+          desc: {
+            uz: "Yangi qo‘y jigari charvi yog‘iga o‘rab, mayin va shirali qilib pishirilgan.",
+            ru: "Свежая баранья печень, запеченная в жировой сетке до нежной корочки.",
+            en: "Fresh lamb liver wrapped in caul fat and grilled until tender and juicy."
+          }
+        },
+        {
+          id: 13,
+          category: "kebabs",
+          price: 21000,
+          image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Tovuq Qanotchalari Shashlik", ru: "Шашлык из куриных крылышек", en: "Charcoal Chicken Wings" },
+          desc: {
+            uz: "Qarsildoq po‘stloqli, maxsus sousda marinadlangan tovuq qanotchalari.",
+            ru: "Аппетитные куриные крылышки с хрустящей корочкой в фирменном маринаде.",
+            en: "Crispy-skinned chicken wings marinated in our signature house spice blend."
+          }
+        },
+        {
+          id: 14,
+          category: "kebabs",
+          price: 15000,
+          image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Sabzavotli Mangal Shashlik", ru: "Овощной шашлык на мангале", en: "Charcoal Grilled Vegetables" },
+          desc: {
+            uz: "Ko‘mirda pishirilgan pomidor, baqlajon, bulg‘or qalampiri va achchiq qalampir.",
+            ru: "Запеченные на углях томаты, баклажаны, болгарский и острый перец.",
+            en: "Charcoal-roasted tomatoes, eggplant, bell peppers, and chili."
+          }
+        },
+
+        // ==================== 3. SHO'RVALAR ====================
+        {
+          id: 15,
+          category: "soups",
+          price: 28000,
+          image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Ko‘za Sho‘rva", ru: "Куза Шурпа", en: "Clay Pot Shurpa" },
+          desc: {
+            uz: "Sopol ko‘zada past olovda uzoq qaynatilgan sarxil go‘sht va sabzavotli tiniq sho‘rva.",
+            ru: "Наваристый прозрачный бульон с мясом и овощами, томленный в глиняном горшочке.",
+            en: "Slow-simmered clear meat and vegetable broth cooked in a traditional clay pot."
+          }
+        },
+        {
+          id: 16,
+          category: "soups",
+          price: 25000,
+          image: "https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Mastava", ru: "Мастава", en: "Mastava Rice Soup" },
+          desc: {
+            uz: "Qatiq va ko‘katlar bilan tortiladigan xushbo‘y milliy guruchli sho‘rva.",
+            ru: "Ароматный национальный рисовый суп, подается со свежей зеленью и катыком.",
+            en: "Fragrant traditional Uzbek rice soup served with fresh herbs and yogurt."
+          }
+        },
+        {
+          id: 17,
+          category: "soups",
+          price: 26000,
+          image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Chuchvara Sho‘rva", ru: "Суп Чучвара (Пельмени)", en: "Uzbek Chuchvara Dumpling Soup" },
+          desc: {
+            uz: "Qo‘lda tugilgan mayda chuchvaralar, tiniq go‘sht qaynatmasi va suzma bilan.",
+            ru: "Домашние пельмени ручной лепки в прозрачном мясном бульоне со сметаной.",
+            en: "Hand-folded mini meat dumplings in rich broth served with sour cream and herbs."
+          }
+        },
+
+        // ==================== 4. MILLIY TAOMLAR ====================
+        {
+          id: 18,
+          category: "national",
+          price: 34000,
+          image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Qozon Kabob", ru: "Казан-кебаб", en: "Kazan Kebab" },
+          desc: {
+            uz: "Qizigan qozonda qizartirib pishirilgan yumshoq qo‘y go‘shti va tillarang kartoshka.",
+            ru: "Нежная баранина и золотистый картофель, обжаренные в раскаленном казане.",
+            en: "Tender lamb and golden potatoes slow-fried to perfection in a traditional cast-iron kazan."
+          }
+        },
+        {
+          id: 19,
+          category: "national",
+          price: 30000,
+          image: "https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Norin (An'anaviy)", ru: "Нарын традиционный", en: "Traditional Norin" },
+          desc: {
+            uz: "Yupqa yoyilgan xamir va mayda to‘g‘ralgan go‘shtdan tayyorlangan tansiq milliy taom.",
+            ru: "Изысканное национальное блюдо из тонко нарезанного теста и отварного мяса.",
+            en: "Delicate hand-cut noodles tossed with finely sliced boiled meat and aromatic oil."
+          }
+        },
+        {
+          id: 20,
+          category: "national",
+          price: 28000,
+          image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Qovurma Lag‘mon", ru: "Жареный лагман (Ковурма)", en: "Fried Lagman" },
+          desc: {
+            uz: "Qo‘lda cho‘zilgan lag‘mon xamiri, sarxil go‘sht va rang-barang sabzavotlar qovurmasi.",
+            ru: "Тянутая вручную лапша, обжаренная с сочным мясом и свежими овощами.",
+            en: "Hand-pulled noodles stir-fried with tender beef, bell peppers, and aromatic spices."
+          }
+        },
+        {
+          id: 21,
+          category: "national",
+          price: 27000,
+          image: "https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Manti (4 dona, Bug‘da)", ru: "Манты на пару (4 шт.)", en: "Steamed Manti (4 pcs)" },
+          desc: {
+            uz: "Yupqa xamir ichida mayda to‘g‘ralgan go‘sht, piyoz va dumg‘aza yog‘i bilan bug‘da pishirilgan manti.",
+            ru: "Сочные манты на пару из тонкого теста с рубленым мясом и луком.",
+            en: "Steamed thin-dough dumplings stuffed with hand-chopped meat, onions, and cumin."
+          }
+        },
+        {
+          id: 22,
+          category: "national",
+          price: 12000,
+          image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Tandir Somsa (Go‘shtli)", ru: "Тандырная самса с мясом", en: "Tandoor Meat Samsa" },
+          desc: {
+            uz: "Issiq tandirda qizartirib pishirilgan qatlama xamirli sersuv go‘shtli somsa.",
+            ru: "Хрустящая слоеная самса с сочной мясной начинкой из горячего тандыра.",
+            en: "Flaky puff-pastry samsa filled with juicy spiced meat, baked in a clay tandoor."
+          }
+        },
+
+        // ==================== 5. SALATLAR ====================
+        {
+          id: 23,
+          category: "salads",
+          price: 12000,
+          image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Achchiq-Chuchuk", ru: "Ачик-чучук", en: "Achichuk Tomato Salad" },
+          desc: {
+            uz: "Palovning ajralmas hamrohi: yupqa to‘g‘ralgan pishgan pomidor, piyoz va achchiq qalampir.",
+            ru: "Незаменимое дополнение к плову: тонко нарезанные спелые томаты, лук и острый перец.",
+            en: "The essential companion to plov: thinly sliced ripe tomatoes, sweet onions, and chili."
+          }
+        },
+        {
+          id: 24,
+          category: "salads",
+          price: 15000,
+          image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Bahor Salati", ru: "Салат Весенний", en: "Fresh Spring Salad" },
+          desc: {
+            uz: "Yangi bodring, pomidor, rediska va sarxil ko‘katlar uyg‘unligi.",
+            ru: "Свежие огурцы, помидоры, редис и ароматная зелень.",
+            en: "Crisp cucumbers, tomatoes, radishes, and fresh garden herbs."
+          }
+        },
+        {
+          id: 25,
+          category: "salads",
+          price: 14000,
+          image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Suzma va Ko‘katlar", ru: "Сузьма с зеленью", en: "Strained Yogurt with Herbs" },
+          desc: {
+            uz: "Quyuq qaymoqli suzma, mayda to‘g‘ralgan shivit va rayhon bilan.",
+            ru: "Нежная густая сузьма со свежим укропом и базиликом.",
+            en: "Creamy strained yogurt garnished with finely chopped fresh dill and basil."
+          }
+        },
+        {
+          id: 26,
+          category: "salads",
+          price: 13000,
+          image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Anorli Turp Salati", ru: "Салат из редьки с гранатом", en: "Radish & Pomegranate Salad" },
+          desc: {
+            uz: "Osh hazmini yengillashtiruvchi qizil anor donalari qo‘shilgan mayin turp salati.",
+            ru: "Освежающий салат из сочной редьки с зернами спелого граната.",
+            en: "Refreshing shredded radish salad topped with ruby pomegranate seeds."
+          }
+        },
+
+        // ==================== 6. ICHIMLIKLAR (MILLIY COLA, PEPSI, FANTA, CHOYLAR) ====================
+        {
+          id: 27,
+          category: "drinks",
+          price: 12000,
+          image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Milliy Cola (1 L)", ru: "Milliy Cola (1 л)", en: "Milliy Cola (1 L)" },
+          desc: {
+            uz: "O‘zbekistonning sevimli milliy gazli ichimligi — yaxdek sovutilgan holda.",
+            ru: "Популярный национальный газированный напиток Узбекистана, подается охлажденным.",
+            en: "Uzbekistan's favorite national cola drink, served ice-cold."
+          }
+        },
+        {
+          id: 28,
+          category: "drinks",
+          price: 14000,
+          image: "https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Pepsi (1 L)", ru: "Pepsi (1 л)", en: "Pepsi (1 L)" },
+          desc: {
+            uz: "Klassik tetiklantiruvchi Pepsi ichimligi.",
+            ru: "Классический освежающий напиток Pepsi.",
+            en: "Classic refreshing chilled Pepsi."
+          }
+        },
+        {
+          id: 29,
+          category: "drinks",
+          price: 14000,
+          image: "https://images.unsplash.com/photo-1624517452488-04869289c4ca?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Fanta Apelsin (1 L)", ru: "Fanta Апельсин (1 л)", en: "Fanta Orange (1 L)" },
+          desc: {
+            uz: "Yorqin apelsin ta'mli gazli ichimlik.",
+            ru: "Газированный напиток с ярким вкусом спелого апельсина.",
+            en: "Bright and refreshing orange-flavored sparkling drink."
+          }
+        },
+        {
+          id: 30,
+          category: "drinks",
+          price: 10000,
+          image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Ko‘k Choy 95 (Choynakda)", ru: "Зеленый чай №95 (Чайник)", en: "Green Tea No. 95 (Pot)" },
+          desc: {
+            uz: "Palovdan so‘ng hazmni yengillashtiruvchi xushbo‘y 95-ko‘k choy.",
+            ru: "Ароматный зеленый чай №95, идеально дополняющий трапезу после плова.",
+            en: "Fragrant No. 95 green tea brewed to complement a rich Uzbek meal."
+          }
+        },
+        {
+          id: 31,
+          category: "drinks",
+          price: 14000,
+          image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Limonli va Novvotli Choy", ru: "Чай с лимоном и наватом", en: "Lemon & Navat Rock Sugar Tea" },
+          desc: {
+            uz: "Yangi kesilgan limon va sharqona kristall novvot bilan damlangan maxsus choy.",
+            ru: "Ароматный чай со свежим лимоном и восточным кристаллическим сахаром нават.",
+            en: "Aromatic brewed tea served with fresh lemon slices and traditional Uzbek crystal sugar."
+          }
+        },
+        {
+          id: 32,
+          category: "drinks",
+          price: 10000,
+          image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Salqin Ayron (Rayhonli)", ru: "Освежающий Айран с базиликом", en: "Chilled Basil Ayran" },
+          desc: {
+            uz: "Tabiiy qatiq va xushbo‘y rayhon barglaridan tayyorlangan salqin ichimlik.",
+            ru: "Натуральный охлажденный айран со свежими листьями базилика.",
+            en: "Refreshing chilled yogurt drink infused with fresh basil leaves."
+          }
+        },
+        {
+          id: 33,
+          category: "drinks",
+          price: 15000,
+          image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Uy Kompot (Olcha va Olma)", ru: "Домашний компот (Вишня и яблоко)", en: "Homemade Cherry & Apple Compote" },
+          desc: {
+            uz: "Sarxil mevalardan qaynatilgan tabiiy va shirin uy kompoti (1 L grafin).",
+            ru: "Натуральный домашний компот из спелой вишни и яблок (графин 1 л).",
+            en: "Natural homemade fruit compote brewed from cherries and apples (1 L carafe)."
+          }
+        },
+        {
+          id: 34,
+          category: "drinks",
+          price: 6000,
+          image: "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Gazlangan / Gazsiz Suv (1 L)", ru: "Минеральная вода (1 л)", en: "Still / Sparkling Water (1 L)" },
+          desc: {
+            uz: "Toza ichimlik suvi (gazlangan yoki gazsiz tanlov asosida).",
+            ru: "Чистая питьевая вода (газированная или без газа на выбор).",
+            en: "Pure bottled mineral water (still or sparkling)."
+          }
+        },
+
+        // ==================== 7. SHIRINLIKLAR ====================
+        {
+          id: 35,
+          category: "desserts",
+          price: 16000,
+          image: "https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Milliy Chak-Chak va Yong‘oq", ru: "Национальный Чак-чак с орехами", en: "Honey Chak-Chak with Walnuts" },
+          desc: {
+            uz: "Tabiiy tog‘ asali va qovurilgan yong‘oqlar bilan bezatilgan sharqona shirinlik.",
+            ru: "Восточная сладость с натуральным горным медом и грецкими орехами.",
+            en: "Traditional sweet pastry glazed with pure mountain honey and walnuts."
+          }
+        },
+        {
+          id: 36,
+          category: "desserts",
+          price: 18000,
+          image: "https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80",
+          name: { uz: "Samarqand Holvasi (Assorti)", ru: "Самаркандская халва (Ассорти)", en: "Samarkand Halva Assortment" },
+          desc: {
+            uz: "Pista, bodom va qaymoqli ta'mlarga ega mayin sharqona holva to‘plami.",
+            ru: "Нежная восточная халва с фисташками, миндалем и сливочным вкусом.",
+            en: "Delicate traditional halva assortment with pistachios, almonds, and cream."
+          }
+        }
+      ],
+      // Maxsus takliflar (Keyinchalik oson tahrirlanadi)
+      offers: [
+        {
+          badge: { uz: "Oilaviy to‘plam", ru: "Семейный сет", en: "Family Set" },
+          title: { uz: "4 kishilik Shohona Dasturxon", ru: "Королевский дастархан на 4 персоны", en: "Royal Dastarkhan for 4" },
+          desc: {
+            uz: "4 porsiya Andijoncha palov, 2 ta Achchiq-chuchuk salati, non va 1 choynak ko‘k choy maxsus qulay shartlarda.",
+            ru: "4 порции андижанского плова, 2 салата ачик-чучук, лепешки и чайник зеленого чая на выгодных условиях.",
+            en: "4 portions of Andijan plov, 2 Achichuk salads, traditional bread, and a pot of green tea."
+          }
+        },
+        {
+          badge: { uz: "Tadbirlar uchun", ru: "Для мероприятий", en: "For Events" },
+          title: { uz: "Katta Qozon Buyurtmalari", ru: "Заказ больших казанов", en: "Large Kazan Catering" },
+          desc: {
+            uz: "Oilaviy marosimlar, mehmondorchilik va jamoaviy tadbirlar uchun alohida qozonda palov tayyorlash xizmati.",
+            ru: "Приготовление плова в отдельном казане для семейных торжеств и корпоративных мероприятий.",
+            en: "Dedicated kazan plov preparation for family gatherings and corporate events."
+          }
+        },
+        {
+          badge: { uz: "Tezkor yetkazish", ru: "Быстрая доставка", en: "Fast Delivery" },
+          title: { uz: "Issiq Holda Yetkazib Berish", ru: "Доставка в горячем виде", en: "Hot Delivery Service" },
+          desc: {
+            uz: "Andijon shahri bo‘ylab buyurtmalaringiz maxsus issiq saqlovchi idishlarda tezda yetkaziladi.",
+            ru: "Доставка заказов по городу Андижан в специальных термоконтейнерах.",
+            en: "Fast delivery across Andijan city in insulated heat-retaining packaging."
+          }
+        }
+      ],
+
+      // Nega aynan biz? (6 ta afzallik)
+      features: [
+        {
+          icon: "🍲",
+          title: { uz: "Milliy ta'm", ru: "Национальный вкус", en: "Authentic Taste" },
+          desc: {
+            uz: "Asl Andijoncha oshpazlik sirlari asosida tayyorlangan betakror va unutilmas ta'm.",
+            ru: "Неповторимый вкус, созданный по исконным андижанским кулинарным традициям.",
+            en: "Unforgettable flavor crafted according to authentic Andijan culinary traditions."
+          }
+        },
+        {
+          icon: "🥩",
+          title: { uz: "Sifatli mahsulotlar", ru: "Качественные продукты", en: "Premium Ingredients" },
+          desc: {
+            uz: "Faqat halol, yangi va tabiiy mahsulotlardan foydalanish — bizning o‘zgarmas qoidamiz.",
+            ru: "Использование только свежих, натуральных и халяль продуктов — наше главное правило.",
+            en: "Using only fresh, natural, and halal ingredients is our unwavering rule."
+          }
+        },
+        {
+          icon: "👨‍🍳",
+          title: { uz: "Tajribali oshpazlar", ru: "Опытные повара", en: "Master Chefs" },
+          desc: {
+            uz: "Ko‘p yillik tajribaga ega mohir oshpazlarimiz har bir qozonga mehr bilan yondashadi.",
+            ru: "Наши искусные повара с многолетним опытом вкладывают душу в каждый казан.",
+            en: "Our seasoned master chefs pour passion and precision into every single kazan."
+          }
+        },
+        {
+          icon: "⚡",
+          title: { uz: "Qulay xizmat", ru: "Удобный сервис", en: "Seamless Service" },
+          desc: {
+            uz: "Tezkor xizmat ko‘rsatish va onlayn buyurtma berishning sodda hamda qulay tizimi.",
+            ru: "Оперативное обслуживание и простая система онлайн-заказа.",
+            en: "Prompt table service and a simple, fast online ordering experience."
+          }
+        },
+        {
+          icon: "🏛️",
+          title: { uz: "Shinam muhit", ru: "Уютная атмосфера", en: "Cozy Atmosphere" },
+          desc: {
+            uz: "Milliy naqshlar va zamonaviy qulaylik uyg‘unlashgan keng, yorug‘ va shinam zallar.",
+            ru: "Просторные и уютные залы, где национальный колорит сочетается с современным комфортом.",
+            en: "Spacious, welcoming dining halls blending Uzbek heritage with modern comfort."
+          }
+        },
+        {
+          icon: "🤲",
+          title: { uz: "Mehmondo‘stlik", ru: "Гостеприимство", en: "Warm Hospitality" },
+          desc: {
+            uz: "Har bir tashrif buyuruvchini o‘z uyimizdagi eng aziz mehmondek kutib olamiz.",
+            ru: "Мы встречаем каждого посетителя как самого дорогого гостя в нашем доме.",
+            en: "We welcome every visitor like an honored guest in our own home."
+          }
+        }
+      ],
+
+      // Fotogalereya
+      gallery: [
+        {
+          src: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=1000&q=85",
+          title: { uz: "Andijoncha Devzira Palov", ru: "Андижанский плов Девзира", en: "Andijan Devzira Plov" },
+          sub: { uz: "Milliy taomlar", ru: "Национальные блюда", en: "National Cuisine" }
+        },
+        {
+          src: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=85",
+          title: { uz: "Ko‘mirda pishgan kaboblar", ru: "Шашлыки на углях", en: "Charcoal Kebabs" },
+          sub: { uz: "Oshxona jarayoni", ru: "Процесс приготовления", en: "Kitchen Craft" }
+        },
+        {
+          src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85",
+          title: { uz: "Shinam mehmonlar zali", ru: "Уютный гостевой зал", en: "Main Dining Hall" },
+          sub: { uz: "Restoran interyeri", ru: "Интерьер ресторана", en: "Restaurant Interior" }
+        },
+        {
+          src: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=1000&q=85",
+          title: { uz: "Bayramona dasturxon", ru: "Праздничный дастархан", en: "Festive Platter" },
+          sub: { uz: "Maxsus tortiq", ru: "Особая подача", en: "Signature Serving" }
+        },
+        {
+          src: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=1000&q=85",
+          title: { uz: "Issiq milliy sho‘rvalar", ru: "Горячие национальные супы", en: "Hot Traditional Soups" },
+          sub: { uz: "Taomnoma", ru: "Меню", en: "Menu Selection" }
+        },
+        {
+          src: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=85",
+          title: { uz: "Oilaviy va VIP xonalar", ru: "Семейные и VIP залы", en: "Family & VIP Rooms" },
+          sub: { uz: "Qulay muhit", ru: "Комфортная среда", en: "Comfort Spaces" }
+        }
+      ],
+
+      // Mijozlar fikrlari uchun tahrirlanadigan namunaviy joylar (soxta reytinglarsiz)
+      testimonials: [
+        {
+          label: { uz: "Namunaviy joy #1 (Tahrirlanadi)", ru: "Шаблон отзыва #1 (Редактируемый)", en: "Editable Review Slot #1" },
+          text: {
+            uz: "“Bu yerga tashrif buyurgan mehmonlarning haqiqiy fikr-mulohazalari joylashtiriladi. Masalan: Palovning ta'mi va xizmat ko‘rsatish sifati haqidagi taassurotlar.”",
+            ru: "«Здесь размещаются реальные отзывы гостей заведения о вкусе плова, чистоте и уровне гостеприимства.»",
+            en: "“Real guest feedback regarding our plov flavor, cleanliness, and hospitality will be displayed here.”"
+          },
+          author: { uz: "Mehmon ismi (Kiritiladi)", ru: "Имя гостя (Заполняется)", en: "Guest Name (To be added)" }
+        },
+        {
+          label: { uz: "Namunaviy joy #2 (Tahrirlanadi)", ru: "Шаблон отзыва #2 (Редактируемый)", en: "Editable Review Slot #2" },
+          text: {
+            uz: "“Oilaviy dasturxon va mehmondorchilik tadbirlari uchun qoldirilgan mijozlar tavsiyalari uchun mo‘ljallangan maxsus maydon.”",
+            ru: "«Специальный блок для рекомендаций клиентов, проводивших семейные обеды и мероприятия.»",
+            en: "“Dedicated space for recommendations from guests hosting family lunches and gatherings.”"
+          },
+          author: { uz: "Mehmon ismi (Kiritiladi)", ru: "Имя гостя (Заполняется)", en: "Guest Name (To be added)" }
+        },
+        {
+          label: { uz: "Namunaviy joy #3 (Tahrirlanadi)", ru: "Шаблон отзыва #3 (Редактируемый)", en: "Editable Review Slot #3" },
+          text: {
+            uz: "“Yetkazib berish xizmati va milliy taomlar sifati bo‘yicha mijozlarning samimiy fikrlarini SITE_CONFIG orqali osongina qo‘shishingiz mumkin.”",
+            ru: "«Вы можете легко добавить сюда искренние отзывы о доставке и качестве блюд через SITE_CONFIG.»",
+            en: "“You can easily add genuine customer impressions about delivery and food quality via SITE_CONFIG.”"
+          },
+          author: { uz: "Mehmon ismi (Kiritiladi)", ru: "Имя гостя (Заполняется)", en: "Guest Name (To be added)" }
+        }
+      ],
+
+      // Filiallar (Yangi filial qo'shish uchun shu massivga yangi obyekt qo'shish kifoya)
+      branches: [
+        {
+          id: "main-branch",
+          name: {
+            uz: "XOJIAKBAR OSH MARKAZI — Asosiy Filial",
+            ru: "XOJIAKBAR OSH MARKAZI — Главный филиал",
+            en: "XOJIAKBAR OSH MARKAZI — Main Branch"
+          },
+          status: { uz: "Asosiy markaz", ru: "Главный центр", en: "Flagship" },
+          address: {
+            uz: "O‘zbekiston, Andijon shahri, Eski shahar hududi",
+            ru: "Узбекистан, г. Андижан, район Старого города",
+            en: "Old City District, Andijan, Uzbekistan"
+          },
+          landmark: {
+            uz: "Devnaboy masjidi ro‘parasida",
+            ru: "Напротив мечети Девнабой",
+            en: "Opposite Devnaboy Mosque"
+          },
+          phone: "+998 91 713 44 47",
+          hours: {
+            uz: "Ish vaqti: Keyinchalik kiritiladi (SITE_CONFIG orqali)",
+            ru: "Режим работы: Будет добавлен позже",
+            en: "Working hours: To be updated via SITE_CONFIG"
+          },
+          mapUrl: "https://www.google.com/maps/search/?api=1&query=Andijon+Eski+shahar+Devnaboy+masjidi"
+        }
+      ]
+    };
+
+    /**
+     * ==========================================================================
+     * UI TRANSLATIONS DICTIONARY (UZ / RU / EN)
+     * ==========================================================================
+     */
+    const I18N = {
+      uz: {
+        nav_home: "Bosh sahifa",
+        nav_menu: "Menyu",
+        nav_about: "Biz haqimizda",
+        nav_gallery: "Galereya",
+        nav_branches: "Filiallar",
+        nav_contact: "Aloqa",
+        nav_order: "Buyurtma berish",
+        hero_badge: "Andijon Milliy Oshxona Merosi",
+        hero_title: "Haqiqiy o‘zbek palovi — <span>milliy ta'm va an'ana!</span>",
+        hero_subtitle: "XOJIAKBAR OSH MARKAZI — an'anaviy o‘zbek taomlari maskani. Har bir qozonda asrlik mahorat, sarxil masalliqlar va samimiy mehmondo‘stlik mujassam.",
+        hero_btn_menu: "Menyuni ko‘rish",
+        hero_btn_order: "Buyurtma berish",
+        hero_loc_label: "Manzilimiz",
+        hero_loc_val: "Andijon, Eski shahar (Devnaboy masjidi ro‘parasida)",
+        hero_phone_label: "Tezkor aloqa",
+        hero_card_tag: "Oshpaz tavsiyasi",
+        hero_card_title: "Andijoncha Devzira Palov",
+        offers_badge: "Maxsus takliflar",
+        offers_title: "Mehmonlarimiz uchun qulay takliflar",
+        offers_sub: "Oilaviy dasturxonlar, tushlik va korporativ buyurtmalar uchun maxsus to‘plamlar.",
+        menu_badge: "Milliy taomnoma",
+        menu_title: "Sarxil O‘zbek Taomlari Menyusi",
+        menu_sub: "Kategoriyani tanlang yoki taom nomi bo‘yicha qidiring va savatga qo‘shing.",
+        search_placeholder: "Taom nomini qidiring...",
+        add_to_cart: "Buyurtma berish",
+        no_results: "Qidiruv bo‘yicha taom topilmadi. Boshqa so‘z bilan urinib ko‘ring.",
+        about_badge: "Biz haqimizda",
+        about_title: "An'analarga Sodiqlik va Yuqori Sifat Maskani",
+        about_p1: "XOJIAKBAR OSH MARKAZI — o‘zbek milliy oshpazlik san'atining eng sara an'analarini zamonaviy xizmat madaniyati bilan uyg‘unlashtirgan maskandir. Biz uchun har bir mehmon — aziz va qadrli.",
+        about_p2: "Taomlarimiz faqat sara guruch, yangi go‘sht va tabiiy ziravorlardan, gigiyena hamda halollik talablariga qat'iy rioya qilgan holda tayyorlanadi.",
+        pillar_1_t: "Milliy an'analar",
+        pillar_1_d: "Avloddan-avlodga o‘tib kelayotgan haqiqiy Andijoncha osh tayyorlash uslubi.",
+        pillar_2_t: "Sifatli mahsulotlar",
+        pillar_2_d: "Har kuni tongda saralab olingan eng toza va tabiiy masalliqlar.",
+        pillar_3_t: "Mehmondo‘stlik",
+        pillar_3_d: "O‘zbekona ochiq chehra, hurmat va samimiy xizmat ko‘rsatish.",
+        pillar_4_t: "Tozalik va sifat",
+        pillar_4_d: "Oshxona va zallarda yuqori darajadagi ozodalik nazorati.",
+        founder_role: "Asoschi / Founder",
+        founder_quote: "“Maqsadimiz — XOJIAKBAR OSH MARKAZIga tashrif buyurgan har bir yurtdoshimiz va mehmonimizga haqiqiy o‘zbek palovining asl ta'mini, oilaviy iliqlik va yuksak hurmatni taqdim etishdir.”",
+        why_badge: "Afzalliklarimiz",
+        why_title: "Nega Aynan XOJIAKBAR OSH MARKAZI?",
+        why_sub: "Mijozlarimiz ishonchini qozonishimizga sabab bo‘layotgan 6 ta asosiy tamoyilimiz.",
+        gal_badge: "Fotogalereya",
+        gal_title: "Taomlar va Muhitimizdan Lavhalar",
+        gal_sub: "Rasm ustiga bosing va to‘liq o‘lchamda tomosha qiling.",
+        test_badge: "Mijozlar fikri",
+        test_title: "Mehmonlarimiz Taassurotlari",
+        test_sub: "Ushbu bo‘limga mijozlarning haqiqiy fikr-mulohazalari va tavsiyalari joylashtiriladi.",
+        branch_badge: "Filiallarimiz",
+        branch_title: "Bizning Manzil va Filiallar",
+        branch_sub: "Sizni shinam dasturxonimiz atrofida kutib qolamiz.",
+        branch_dir: "Yo‘nalish olish ↗",
+        contact_badge: "Bog‘lanish",
+        contact_title: "Biz Bilan Aloqa",
+        contact_sub: "Buyurtma berish, joy band qilish yoki hamkorlik masalalari bo‘yicha murojaat qiling.",
+        contact_phone_t: "Telefon raqam",
+        contact_addr_t: "Manzil va mo‘ljal",
+        contact_addr_v: "O‘zbekiston, Andijon shahri, Eski shahar hududi.<br><strong>Mo‘ljal:</strong> Devnaboy masjidi ro‘parasida.",
+        contact_founder_t: "Asoschi",
+        btn_call: "Qo‘ng‘iroq qilish",
+        btn_tg: "Telegram orqali yozish",
+        footer_desc: "XOJIAKBAR OSH MARKAZI — an'anaviy o‘zbek taomlari va haqiqiy Andijoncha palov maskani. Sifat, halollik va mehmondo‘stlik timsoli.",
+        footer_founder: "Asoschi:",
+        footer_nav: "Tezkor havolalar",
+        footer_contact: "Aloqa ma'lumotlari",
+        cart_title: "Sizning Buyurtmangiz",
+        cart_empty: "Savat hozircha bo‘sh. Menyudan taom tanlang!",
+        form_name: "Ismingiz *",
+        form_phone: "Telefon raqamingiz *",
+        form_address: "Yetkazib berish manzili *",
+        form_note: "Qo‘shimcha izoh (ixtiyoriy)",
+        cart_total: "Jami summa:",
+        btn_send_tg: "Buyurtmani Telegram orqali yuborish",
+        cart_hint: "Buyurtma matni tayyorlanib, @mirzayev_0608 Telegram sahifasiga yo‘naltiriladi.",
+        toast_added: "Savatga qo‘shildi!",
+        toast_empty_cart: "Iltimos, avval menyudan kamida bitta taom tanlang!"
+      },
+      ru: {
+        nav_home: "Главная",
+        nav_menu: "Меню",
+        nav_about: "О нас",
+        nav_gallery: "Галерея",
+        nav_branches: "Филиалы",
+        nav_contact: "Контакты",
+        nav_order: "Заказать",
+        hero_badge: "Наследие Узбекской Кухни в Андижане",
+        hero_title: "Настоящий узбекский плов — <span>национальный вкус и традиции!</span>",
+        hero_subtitle: "XOJIAKBAR OSH MARKAZI — дом традиционной узбекской кухни. В каждом казане — вековое мастерство, отборные продукты и искреннее гостеприимство.",
+        hero_btn_menu: "Посмотреть меню",
+        hero_btn_order: "Оформить заказ",
+        hero_loc_label: "Наш адрес",
+        hero_loc_val: "г. Андижан, Старый город (напротив мечети Девнабой)",
+        hero_phone_label: "Быстрая связь",
+        hero_card_tag: "Выбор шеф-повара",
+        hero_card_title: "Андижанский Плов Девзира",
+        offers_badge: "Спецпредложения",
+        offers_title: "Выгодные предложения для гостей",
+        offers_sub: "Специальные сеты для семейных застолий, обедов и мероприятий.",
+        menu_badge: "Национальное меню",
+        menu_title: "Меню Узбекских Блюд",
+        menu_sub: "Выберите категорию или найдите блюдо по названию и добавьте в корзину.",
+        search_placeholder: "Поиск блюда по названию...",
+        add_to_cart: "В корзину",
+        no_results: "Блюда по вашему запросу не найдены.",
+        about_badge: "О нас",
+        about_title: "Верность Традициям и Высокое Качество",
+        about_p1: "XOJIAKBAR OSH MARKAZI — место, где лучшие традиции узбекского кулинарного искусства сочетаются с современной культурой сервиса.",
+        about_p2: "Наши блюда готовятся исключительно из отборного риса, свежего мяса и натуральных специй со строгим соблюдением чистоты и стандартов халяль.",
+        pillar_1_t: "Национальные традиции",
+        pillar_1_d: "Исконная андижанская технология приготовления плова, передаваемая из поколения в поколение.",
+        pillar_2_t: "Свежие продукты",
+        pillar_2_d: "Ежедневный утренний отбор самых чистых и натуральных ингредиентов.",
+        pillar_3_t: "Гостеприимство",
+        pillar_3_d: "Искреннее радушие, уважение и внимательный сервис для каждого гостя.",
+        pillar_4_t: "Чистота и качество",
+        pillar_4_d: "Строгий контроль чистоты на кухне и в гостевых залах.",
+        founder_role: "Основатель / Founder",
+        founder_quote: "«Наша цель — подарить каждому гостю XOJIAKBAR OSH MARKAZI подлинный вкус настоящего узбекского плова, семейное тепло и высокое уважение.»",
+        why_badge: "Наши преимущества",
+        why_title: "Почему Выбирают XOJIAKBAR OSH MARKAZI?",
+        why_sub: "6 главных принципов, благодаря которым нам доверяют гости.",
+        gal_badge: "Фотогалерея",
+        gal_title: "Блюда и Атмосфера Ресторана",
+        gal_sub: "Нажмите на фотографию для просмотра в полном размере.",
+        test_badge: "Отзывы гостей",
+        test_title: "Впечатления Наших Гостей",
+        test_sub: "В этом разделе размещаются реальные отзывы и рекомендации посетителей.",
+        branch_badge: "Филиалы",
+        branch_title: "Наш Адрес и Филиалы",
+        branch_sub: "Будем рады видеть вас за нашим гостеприимным дастарханом.",
+        branch_dir: "Построить маршрут ↗",
+        contact_badge: "Контакты",
+        contact_title: "Связаться с Нами",
+        contact_sub: "Обращайтесь для оформления заказа, бронирования или сотрудничества.",
+        contact_phone_t: "Номер телефона",
+        contact_addr_t: "Адрес и ориентир",
+        contact_addr_v: "Узбекистан, г. Андижан, район Старого города.<br><strong>Ориентир:</strong> напротив мечети Девнабой.",
+        contact_founder_t: "Основатель",
+        btn_call: "Позвонить",
+        btn_tg: "Написать в Telegram",
+        footer_desc: "XOJIAKBAR OSH MARKAZI — дом традиционной узбекской кухни и настоящего андижанского плова.",
+        footer_founder: "Основатель:",
+        footer_nav: "Навигация",
+        footer_contact: "Контактная информация",
+        cart_title: "Ваш Заказ",
+        cart_empty: "Корзина пуста. Выберите блюда из меню!",
+        form_name: "Ваше имя *",
+        form_phone: "Номер телефона *",
+        form_address: "Адрес доставки *",
+        form_note: "Комментарий к заказу (необязательно)",
+        cart_total: "Итого:",
+        btn_send_tg: "Отправить заказ в Telegram",
+        cart_hint: "Текст заказа будет сформирован и открыт в Telegram @mirzayev_0608.",
+        toast_added: "Добавлено в корзину!",
+        toast_empty_cart: "Пожалуйста, сначала выберите хотя бы одно блюдо из меню!"
+      },
+      en: {
+        nav_home: "Home",
+        nav_menu: "Menu",
+        nav_about: "About Us",
+        nav_gallery: "Gallery",
+        nav_branches: "Branches",
+        nav_contact: "Contact",
+        nav_order: "Order Now",
+        hero_badge: "Andijan Culinary Heritage",
+        hero_title: "Authentic Uzbek Plov — <span>National Taste & Tradition!</span>",
+        hero_subtitle: "XOJIAKBAR OSH MARKAZI — the home of traditional Uzbek cuisine. Every kazan embodies centuries of mastery, fresh ingredients, and warm hospitality.",
+        hero_btn_menu: "Explore Menu",
+        hero_btn_order: "Order Now",
+        hero_loc_label: "Our Location",
+        hero_loc_val: "Andijan, Old City (Opposite Devnaboy Mosque)",
+        hero_phone_label: "Direct Line",
+        hero_card_tag: "Chef's Signature",
+        hero_card_title: "Andijan Devzira Plov",
+        offers_badge: "Special Offers",
+        offers_title: "Curated Offers for Our Guests",
+        offers_sub: "Special sets for family gatherings, lunches, and events.",
+        menu_badge: "National Menu",
+        menu_title: "Authentic Uzbek Cuisine Menu",
+        menu_sub: "Filter by category or search by dish name and add to your order.",
+        search_placeholder: "Search dishes...",
+        add_to_cart: "Add to Order",
+        no_results: "No dishes matched your search. Please try another keyword.",
+        about_badge: "About Us",
+        about_title: "Dedication to Tradition and Culinary Excellence",
+        about_p1: "XOJIAKBAR OSH MARKAZI brings together the finest traditions of Uzbek culinary art with modern hospitality standards.",
+        about_p2: "Our dishes are prepared strictly with select rice, fresh meat, and natural spices in accordance with hygiene and halal standards.",
+        pillar_1_t: "National Heritage",
+        pillar_1_d: "Time-honored Andijan plov preparation techniques passed down through generations.",
+        pillar_2_t: "Quality Ingredients",
+        pillar_2_d: "Fresh, natural ingredients hand-selected every morning.",
+        pillar_3_t: "Hospitality",
+        pillar_3_d: "Genuine Uzbek warmth, respect, and attentive service.",
+        pillar_4_t: "Cleanliness & Quality",
+        pillar_4_d: "Strict hygiene and quality control across our kitchen and dining halls.",
+        founder_role: "Founder",
+        founder_quote: "“Our mission is to offer every guest visiting XOJIAKBAR OSH MARKAZI the true taste of authentic Uzbek plov, family warmth, and heartfelt respect.”",
+        why_badge: "Why Choose Us",
+        why_title: "Why XOJIAKBAR OSH MARKAZI?",
+        why_sub: "6 core pillars that earn the trust of our guests every day.",
+        gal_badge: "Photo Gallery",
+        gal_title: "Moments from Our Kitchen & Halls",
+        gal_sub: "Click any photo to view it in full size.",
+        test_badge: "Guest Impressions",
+        test_title: "What Our Guests Say",
+        test_sub: "Genuine reviews and recommendations from our guests are displayed in this section.",
+        branch_badge: "Our Branches",
+        branch_title: "Locations & Branches",
+        branch_sub: "We look forward to welcoming you at our table.",
+        branch_dir: "Get Directions ↗",
+        contact_badge: "Contact",
+        contact_title: "Get in Touch",
+        contact_sub: "Reach out for orders, table reservations, or inquiries.",
+        contact_phone_t: "Phone Number",
+        contact_addr_t: "Address & Landmark",
+        contact_addr_v: "Old City District, Andijan, Uzbekistan.<br><strong>Landmark:</strong> Opposite Devnaboy Mosque.",
+        contact_founder_t: "Founder",
+        btn_call: "Call Now",
+        btn_tg: "Message on Telegram",
+        footer_desc: "XOJIAKBAR OSH MARKAZI — home of traditional Uzbek cuisine and authentic Andijan plov.",
+        footer_founder: "Founder:",
+        footer_nav: "Quick Links",
+        footer_contact: "Contact Info",
+        cart_title: "Your Order",
+        cart_empty: "Your cart is empty. Select dishes from the menu!",
+        form_name: "Your Name *",
+        form_phone: "Phone Number *",
+        form_address: "Delivery Address *",
+        form_note: "Additional Note (optional)",
+        cart_total: "Total Amount:",
+        btn_send_tg: "Send Order via Telegram",
+        cart_hint: "Your order summary will be prepared and opened in Telegram @mirzayev_0608.",
+        toast_added: "Added to your order!",
+        toast_empty_cart: "Please select at least one dish from the menu first!"
+      }
+    };
+
+    /**
+     * ==========================================================================
+     * APPLICATION STATE & INITIALIZATION
+     * ==========================================================================
+     */
+    let currentLang = localStorage.getItem("xojiakbar_lang") || "uz";
+    let currentCategory = "all";
+    let searchQuery = "";
+    let cart = JSON.parse(localStorage.getItem("xojiakbar_cart") || "[]");
+
+    // Format currency helper
+    function formatPrice(amount) {
+      if (!amount || amount <= 0) {
+        return currentLang === "uz" ? "Narx kiritiladi" : currentLang === "ru" ? "Цена уточняется" : "Price TBD";
+      }
+      return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " " + SITE_CONFIG.brand.currency;
+    }
+
+    // Show toast notification
+    function showToast(msg) {
+      const toast = document.getElementById("toast");
+      toast.textContent = msg;
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 2600);
+    }
+
+    // Apply language across static & dynamic elements
+    function applyLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem("xojiakbar_lang", lang);
+      document.documentElement.lang = lang;
+
+      const dict = I18N[lang];
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key]) {
+          el.innerHTML = dict[key];
+        }
+      });
+
+      const searchInput = document.getElementById("menu-search");
+      if (searchInput) searchInput.placeholder = dict.search_placeholder;
+
+      renderOffers();
+      renderCategories();
+      renderMenu();
+      renderFeatures();
+      renderGallery();
+      renderTestimonials();
+      renderBranches();
+      renderCart();
+    }
+
+    // Render Special Offers
+    function renderOffers() {
+      const container = document.getElementById("offers-container");
+      container.innerHTML = SITE_CONFIG.offers.map((offer) => `
+        <article class="offer-card reveal visible">
+          <span class="offer-tag">${offer.badge[currentLang]}</span>
+          <h3>${offer.title[currentLang]}</h3>
+          <p>${offer.desc[currentLang]}</p>
+          <a href="#menu" class="btn btn-gold btn-sm">${I18N[currentLang].hero_btn_menu} →</a>
+        </article>
+      `).join("");
+    }
+
+    // Render Menu Category Tabs
+    function renderCategories() {
+      const container = document.getElementById("category-tabs");
+      container.innerHTML = SITE_CONFIG.categories.map((cat) => `
+        <button
+          type="button"
+          class="cat-btn ${cat.id === currentCategory ? "active" : ""}"
+          data-cat="${cat.id}"
+          role="tab"
+          aria-selected="${cat.id === currentCategory}">
+          ${cat[currentLang]}
+        </button>
+      `).join("");
+
+      container.querySelectorAll(".cat-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          currentCategory = btn.dataset.cat;
+          renderCategories();
+          renderMenu();
+        });
+      });
+    }
+
+    // Render Menu Cards
+    function renderMenu() {
+      const grid = document.getElementById("menu-grid");
+      const filtered = SITE_CONFIG.menuItems.filter((item) => {
+        const matchesCat = currentCategory === "all" || item.category === currentCategory;
+        const q = searchQuery.trim().toLowerCase();
+        const matchesSearch =
+          !q ||
+          item.name[currentLang].toLowerCase().includes(q) ||
+          item.desc[currentLang].toLowerCase().includes(q);
+        return matchesCat && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div class="no-results">${I18N[currentLang].no_results}</div>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map((item) => {
+        const catObj = SITE_CONFIG.categories.find((c) => c.id === item.category);
+        const catLabel = catObj ? catObj[currentLang] : "";
+        return `
+          <article class="menu-card reveal visible">
+            <div class="menu-img-wrap">
+              <img src="${item.image}" alt="${item.name[currentLang]}" loading="lazy" />
+              <span class="menu-cat-badge">${catLabel}</span>
+            </div>
+            <div class="menu-body">
+              <h3 class="menu-title">${item.name[currentLang]}</h3>
+              <p class="menu-desc">${item.desc[currentLang]}</p>
+              <div class="menu-footer">
+                <span class="menu-price">${formatPrice(item.price)}</span>
+                <button type="button" class="btn btn-gold btn-sm add-cart-btn" data-id="${item.id}">
+                  + ${I18N[currentLang].add_to_cart}
+                </button>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join("");
+
+      grid.querySelectorAll(".add-cart-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          addToCart(Number(btn.dataset.id));
+        });
+      });
+    }
+
+    // Render Why Choose Us
+    function renderFeatures() {
+      const grid = document.getElementById("features-grid");
+      grid.innerHTML = SITE_CONFIG.features.map((f) => `
+        <article class="feature-card reveal visible">
+          <div class="feature-icon">${f.icon}</div>
+          <h3>${f.title[currentLang]}</h3>
+          <p>${f.desc[currentLang]}</p>
+        </article>
+      `).join("");
+    }
+
+    // Render Gallery & Bind Lightbox
+    function renderGallery() {
+      const grid = document.getElementById("gallery-grid");
+      grid.innerHTML = SITE_CONFIG.gallery.map((g, idx) => `
+        <div class="gallery-item reveal visible" data-idx="${idx}" tabindex="0" role="button" aria-label="${g.title[currentLang]}">
+          <img src="${g.src}" alt="${g.title[currentLang]}" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>${g.sub[currentLang]}</span>
+            <h4>${g.title[currentLang]}</h4>
+          </div>
+        </div>
+      `).join("");
+
+      grid.querySelectorAll(".gallery-item").forEach((item) => {
+        const openLb = () => {
+          const g = SITE_CONFIG.gallery[Number(item.dataset.idx)];
+          document.getElementById("lightbox-img").src = g.src;
+          document.getElementById("lightbox-img").alt = g.title[currentLang];
+          document.getElementById("lightbox-caption").textContent = `${g.title[currentLang]} — ${g.sub[currentLang]}`;
+          document.getElementById("lightbox").classList.add("open");
+        };
+        item.addEventListener("click", openLb);
+        item.addEventListener("keydown", (e) => { if (e.key === "Enter") openLb(); });
+      });
+    }
+
+    // Render Testimonials (Editable Placeholders)
+    function renderTestimonials() {
+      const grid = document.getElementById("testimonials-grid");
+      grid.innerHTML = SITE_CONFIG.testimonials.map((t) => `
+        <article class="testimonial-card reveal visible">
+          <span class="testimonial-badge">${t.label[currentLang]}</span>
+          <p class="testimonial-text">${t.text[currentLang]}</p>
+          <div class="testimonial-author">— ${t.author[currentLang]}</div>
+        </article>
+      `).join("");
+    }
+
+    // Render Branches
+    function renderBranches() {
+      const grid = document.getElementById("branches-grid");
+      grid.innerHTML = SITE_CONFIG.branches.map((b) => `
+        <article class="branch-card reveal visible">
+          <div class="branch-header">
+            <h3 class="branch-title">${b.name[currentLang]}</h3>
+            <span class="branch-status">${b.status[currentLang]}</span>
+          </div>
+          <ul class="branch-info-list">
+            <li>📍 <strong>Manzil:</strong> ${b.address[currentLang]}</li>
+            <li>🕌 <strong>Mo‘ljal:</strong> ${b.landmark[currentLang]}</li>
+            <li>📞 <strong>Telefon:</strong> <a href="tel:${b.phone.replace(/\s+/g, "")}" style="color: var(--gold-primary); font-weight: 600;">${b.phone}</a></li>
+            <li>🕒 <strong>${b.hours[currentLang]}</strong></li>
+          </ul>
+          <div class="map-placeholder">
+            <span>📍 ${b.address[currentLang]} (${b.landmark[currentLang]})</span>
+            <a href="${b.mapUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm">
+              ${I18N[currentLang].branch_dir}
+            </a>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    /**
+     * ==========================================================================
+     * CART & TELEGRAM ORDER SYSTEM
+     * ==========================================================================
+     */
+    function saveCart() {
+      localStorage.setItem("xojiakbar_cart", JSON.stringify(cart));
+    }
+
+    function addToCart(itemId) {
+      const existing = cart.find((c) => c.id === itemId);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ id: itemId, qty: 1 });
+      }
+      saveCart();
+      renderCart();
+      showToast(I18N[currentLang].toast_added);
+    }
+
+    function updateCartQty(itemId, delta) {
+      const idx = cart.findIndex((c) => c.id === itemId);
+      if (idx === -1) return;
+      cart[idx].qty += delta;
+      if (cart[idx].qty <= 0) {
+        cart.splice(idx, 1);
+      }
+      saveCart();
+      renderCart();
+    }
+
+    function removeFromCart(itemId) {
+      cart = cart.filter((c) => c.id !== itemId);
+      saveCart();
+      renderCart();
+    }
+
+    function renderCart() {
+      const listEl = document.getElementById("cart-items-list");
+      const countBadge = document.getElementById("header-cart-count");
+      const totalEl = document.getElementById("cart-total-price");
+
+      const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
+      countBadge.textContent = totalCount;
+
+      if (cart.length === 0) {
+        listEl.innerHTML = `<p style="text-align:center; color: var(--text-secondary); padding: 24px 0;">${I18N[currentLang].cart_empty}</p>`;
+        totalEl.textContent = formatPrice(0);
+        return;
+      }
+
+      let grandTotal = 0;
+      listEl.innerHTML = cart.map((cartItem) => {
+        const product = SITE_CONFIG.menuItems.find((m) => m.id === cartItem.id);
+        if (!product) return "";
+        const subtotal = product.price * cartItem.qty;
+        grandTotal += subtotal;
+
+        return `
+          <div class="cart-item">
+            <div class="cart-item-info">
+              <h4>${product.name[currentLang]}</h4>
+              <span>${formatPrice(subtotal)}</span>
+            </div>
+            <div class="qty-controls">
+              <button type="button" class="qty-btn" onclick="updateCartQty(${product.id}, -1)" aria-label="Kamaytirish">−</button>
+              <strong>${cartItem.qty}</strong>
+              <button type="button" class="qty-btn" onclick="updateCartQty(${product.id}, 1)" aria-label="Oshirish">+</button>
+              <button type="button" class="remove-item-btn" onclick="removeFromCart(${product.id})" aria-label="O'chirish" title="O'chirish">🗑️</button>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      totalEl.textContent = formatPrice(grandTotal);
+    }
+
+    // Drawer Open / Close Handlers
+    const cartDrawer = document.getElementById("cart-drawer");
+    const cartBackdrop = document.getElementById("cart-backdrop");
+
+    function openCart() {
+      cartDrawer.classList.add("open");
+      cartBackdrop.classList.add("open");
+    }
+
+    function closeCart() {
+      cartDrawer.classList.remove("open");
+      cartBackdrop.classList.remove("open");
+    }
+
+    document.getElementById("open-cart-btn").addEventListener("click", openCart);
+    document.getElementById("hero-order-btn").addEventListener("click", openCart);
+    document.getElementById("close-cart-btn").addEventListener("click", closeCart);
+    cartBackdrop.addEventListener("click", closeCart);
+
+    // Telegram Order Submission
+    document.getElementById("order-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      if (cart.length === 0) {
+        showToast(I18N[currentLang].toast_empty_cart);
+        return;
+      }
+
+      const name = document.getElementById("customer-name").value.trim();
+      const phone = document.getElementById("customer-phone").value.trim();
+      const address = document.getElementById("customer-address").value.trim();
+      const note = document.getElementById("customer-note").value.trim();
+
+      let totalSum = 0;
+      const lines = cart.map((c, index) => {
+        const item = SITE_CONFIG.menuItems.find((m) => m.id === c.id);
+        const sub = item.price * c.qty;
+        totalSum += sub;
+        return `${index + 1}. ${item.name.uz} — ${c.qty} x ${formatPrice(item.price)} = ${formatPrice(sub)}`;
+      });
+
+      const orderMessage = [
+        `🍽 YANGI BUYURTMA — ${SITE_CONFIG.brand.name}`,
+        `━━━━━━━━━━━━━━━━━━`,
+        `👤 Mijoz: ${name}`,
+        `📞 Telefon: ${phone}`,
+        `📍 Manzil: ${address}`,
+        note ? `📝 Izoh: ${note}` : null,
+        `━━━━━━━━━━━━━━━━━━`,
+        `📋 Buyurtma tarkibi:`,
+        ...lines,
+        `━━━━━━━━━━━━━━━━━━`,
+        `💰 JAMI SUMMA: ${formatPrice(totalSum)}`
+      ].filter(Boolean).join("\n");
+
+      // Agar kelajakda Telegram bot webhook ulansa, shu yerda avtomatik POST yuboriladi:
+      if (SITE_CONFIG.brand.telegramBotWebhookUrl) {
+        try {
+          await fetch(SITE_CONFIG.brand.telegramBotWebhookUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ name, phone, address, note, cart, totalSum, text: orderMessage })
+          });
+        } catch (err) {
+          console.warn("Webhook ulanmagan yoki xatolik:", err);
+        }
+      }
+
+      // Telegram sahifasiga tayyor xabar bilan yo'naltirish
+      const encodedText = encodeURIComponent(orderMessage);
+      const tgShareUrl = `https://t.me/${SITE_CONFIG.brand.telegramUsername}?text=${encodedText}`;
+      window.open(tgShareUrl, "_blank", "noopener,noreferrer");
+    });
+
+    /**
+     * ==========================================================================
+     * UI INTERACTIONS: THEME, MOBILE MENU, SCROLL, LIGHTBOX, PRELOADER
+     * ==========================================================================
+     */
+    // Preloader hide
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("preloader").classList.add("hidden");
+      }, 450);
+    });
+
+    // Set current year
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+
+    // Theme Switcher (Dark / Light)
+    const themeToggleBtn = document.getElementById("theme-toggle");
+    const themeIcon = document.getElementById("theme-icon");
+    const savedTheme = localStorage.getItem("xojiakbar_theme") || "dark";
+    document.documentElement.setAttribute("data-theme", savedTheme);
+    themeIcon.textContent = savedTheme === "dark" ? "☀️" : "🌙";
+
+    themeToggleBtn.addEventListener("click", () => {
+      const current = document.documentElement.getAttribute("data-theme");
+      const next = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      localStorage.setItem("xojiakbar_theme", next);
+      themeIcon.textContent = next === "dark" ? "☀️" : "🌙";
+    });
+
+    // Language Switcher
+    const langSwitcher = document.getElementById("lang-switcher");
+    langSwitcher.value = currentLang;
+    langSwitcher.addEventListener("change", (e) => applyLanguage(e.target.value));
+
+    // Menu Live Search
+    document.getElementById("menu-search").addEventListener("input", (e) => {
+      searchQuery = e.target.value;
+      renderMenu();
+    });
+
+    // Mobile Hamburger Menu
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburgerBtn.addEventListener("click", () => {
+      const isOpen = navMenu.classList.toggle("open");
+      hamburgerBtn.classList.toggle("active");
+      hamburgerBtn.setAttribute("aria-expanded", isOpen);
+    });
+
+    navMenu.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("open");
+        hamburgerBtn.classList.remove("active");
+        hamburgerBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    // Lightbox Close
+    const lightbox = document.getElementById("lightbox");
+    document.getElementById("lightbox-close").addEventListener("click", () => lightbox.classList.remove("open"));
+    lightbox.addEventListener("click", (e) => { if (e.target === lightbox) lightbox.classList.remove("open"); });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        lightbox.classList.remove("open");
+        closeCart();
+      }
+    });
+
+    // Scroll Progress, Sticky Header & Scroll-to-Top
+    const header = document.getElementById("header");
+    const scrollProgress = document.getElementById("scroll-progress");
+    const scrollTopBtn = document.getElementById("scroll-top-btn");
+
+    window.addEventListener("scroll", () => {
+      const scrollY = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollY / docHeight) * 100 : 0;
+
+      scrollProgress.style.width = `${progress}%`;
+      header.classList.toggle("scrolled", scrollY > 40);
+      scrollTopBtn.classList.toggle("visible", scrollY > 500);
+    });
+
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Scroll Reveal Intersection Observer
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
+
+    // Initial Render
+    applyLanguage(currentLang);
+  </script>
+</body>
+</html>
+
+</head>
